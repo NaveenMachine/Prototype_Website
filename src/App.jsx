@@ -13,6 +13,10 @@ import Footer from './components/Footer.jsx';
 import Motivation from './components/Motivation.jsx';
 import Organizers from './components/Organizers.jsx';
 import Committee from './components/Committee.jsx';
+import SocialImpact from './components/SocialImpact.jsx';
+import Speakers from './components/Speakers.jsx';
+import Attendees from './components/Attendees.jsx';
+import Journal from './components/Journal.jsx';
 
 function App() {
   const links = ['Home', 'Committees', 'Program', 'Past Events']; // You can modify this as needed
@@ -32,6 +36,10 @@ function App() {
             <Organizers />
             <Committee />
             <Experience />
+            <Speakers />
+            <Attendees />
+            <Journal />
+            <SocialImpact />
           </Container>
         </section>
         <Contact />
