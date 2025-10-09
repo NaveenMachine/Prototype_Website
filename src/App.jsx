@@ -10,6 +10,9 @@ import Experience from './components/Experience.jsx';
 import Projects from './components/Projects.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
+import Motivation from './components/Motivation.jsx';
+import Organizers from './components/Organizers.jsx';
+import Committee from './components/Committee.jsx';
 
 function App() {
   const links = ['Home', 'Committees', 'Program', 'Past Events']; // You can modify this as needed
@@ -25,9 +28,10 @@ function App() {
         <section className="body">
           <Container className="box">
             <About />
-            <Skills />
+            <Motivation />
+            <Organizers />
+            <Committee />
             <Experience />
-            <Projects />
           </Container>
         </section>
         <Contact />

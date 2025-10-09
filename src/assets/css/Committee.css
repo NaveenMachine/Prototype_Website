@@ -1,0 +1,59 @@
+.committee {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .committee h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #fff; /* makes it visible on dark bg */
+  }
+  
+  .committee-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 1000px;
+    text-align: left;
+  }
+  
+  .committee-table td {
+    padding: 0.4rem 1rem;
+    vertical-align: top;
+    font-size: 1rem;
+    line-height: 1.4;
+    white-space: normal;
+    color: #fff; /* white text */
+    border: none; /* remove table cell borders */
+    background: transparent; /* removes the white boxes */
+  }
+  
+  .committee-table tr {
+    background: transparent; /* ensures no row backgrounds */
+  }
+  
+  .committee-table td:first-child {
+    border-right: 2px solid #ccc; /* keeps the center divider */
+    padding-right: 1.5rem;
+  }
+  
+  /* responsive stacking */
+  @media (max-width: 768px) {
+    .committee-table td {
+      display: block;
+      width: 100%;
+      border: none;
+      padding: 0.3rem 0;
+    }
+  
+    .committee-table td:first-child {
+      border-right: none;
+    }
+  
+    .committee-table tr {
+      margin-bottom: 0.8rem;
+      border-bottom: 1px solid #333;
+    }
+  }
+  
