@@ -23,7 +23,7 @@ export default function Footer() {
     >
       {/* Follow Me Heading */}
       <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 1 }}>
-        Follow Me
+        Follow Us
       </Typography>
 
       {/* Social Icons */}

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import data from '../assets/json/chunk-text.json'
 import { Container, Row, Col } from 'react-bootstrap'
 import { ArrowRightCircle } from 'react-bootstrap-icons'
-import headerImg from '../assets/img/cartoon_naveen.avif'
+import headerImg from '../assets/img/lab/stock_image.png'
 import '../assets/css/Banner.css'
 
 const Banner = () => {
@@ -64,15 +64,10 @@ const Banner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7} className="column">
                         <h1>
-                            {`I'm Naveen, a `}
-                            <span className="wrap">{text}</span>
+                            {`WACV 2026 Workshop`}
                         </h1>
                         <p>{banner_text}</p>
-                        <div className="button-container">
-                            <a href="https://github.com/NaveenMachine" target="_blank" rel="noreferrer">
-                                Stalk my GitHub <ArrowRightCircle size={25} />
-                            </a>
-                        </div>
+                        
                     </Col>
                     <Col xs={12} md={6} xl={5} className="img-col">
                         <img src={headerImg} alt="header img" />

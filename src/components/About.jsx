@@ -4,7 +4,7 @@ import '../assets/css/About.css';
 import data from '../assets/json/chunk-text.json';
 import resume from '../assets/resume.pdf';
 
-const images = import.meta.glob('../assets/img/naveen/*.{png,jpg,jpeg,svg,avif}', { eager: true });
+const images = import.meta.glob('../assets/img/lab/*.{png,jpg,jpeg,svg,avif}', { eager: true });
 
 const About = () => {
   const about_text = data.about;
@@ -43,21 +43,10 @@ const About = () => {
 
   return (
     <section className="about" id="about">
-      <h2>Hello World!</h2>
+      <h2>Tentative Call for Papers</h2>
       <Row className="align-items-center">
-        <Col xs={12} lg={6} className="img-col">
-          <img
-            className="abt-img"
-            src={toRotate[loopNum]}
-            alt="Naveen"
-            style={{ opacity: opacity }}
-          />
-        </Col>
-        <Col xs={12} lg={5}>
+        <Col xs={12} lg={12}>
           <p>{about_text}</p>
-          <a className="button-link" href={resume} download="Naveen_Kamath_Resume.pdf">
-            <span>Resume</span>
-          </a>
         </Col>
       </Row>
     </section>

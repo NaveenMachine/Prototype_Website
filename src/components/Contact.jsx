@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useRef } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import contactImg from "../assets/img/cartoon_naveen.avif"
+import contactImg from "../assets/img/lab/stock_image.png"
 import emailjs from '@emailjs/browser'
 
 import '../assets/css/Contact.css'

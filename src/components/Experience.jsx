@@ -1,17 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { MortarboardFill, BriefcaseFill, CalendarEvent, PeopleFill } from 'react-bootstrap-icons';
-import data from '../assets/json/experience.json';
+import data from '../assets/json/schedule.json';
 import '../assets/css/Experience.css';
 
 const tabs = [
-  { id: 'education', label: 'Education', icon: <MortarboardFill className="experience-icon" /> },
-  { id: 'work', label: 'Work', icon: <BriefcaseFill className="experience-icon" /> },
-  { id: 'projects', label: 'Projects', icon: <PeopleFill className="experience-icon" /> },
+  { id: 'schedule', label: 'Schedule', icon: <BriefcaseFill className="experience-icon" /> },
 ];
 
 const Experience = () => {
-  const [open, setOpen] = useState('education');
-  const [tempOpen, setTempOpen] = useState('education');
+  const [open, setOpen] = useState('schedule');
+  const [tempOpen, setTempOpen] = useState('schedule');
   const [changing, setChanging] = useState(false);
   const [isDeleting, setIsDeleting] = useState(false);
   const [opacity, setOpacity] = useState(1);
@@ -76,10 +74,9 @@ const Experience = () => {
             )}
             <div className={index % 2 === 0 ? 'right' : 'left'}>
               <h3 className="experience-title">{item[0]}</h3>
-              <span className="experience-subtitle">{item[1]}</span>
               <div className="experience-calendar">
                 <CalendarEvent />
-                <span>{item[2]}</span>
+                <span>{item[1]}</span>
               </div>
             </div>
             {index % 2 === 0 && (
@@ -96,25 +93,8 @@ const Experience = () => {
 
   return (
     <section className="experience" id="experience">
-      <h2>Experience</h2>
+      <h2>Schedule</h2>
       <div className="experience-container">
-        {/* Tabs */}
-        <div className="experience-tabs">
-          {tabs.map(({ id, label, icon }) => (
-            <div
-              key={id}
-              className={tempOpen === id ? 'experience-button experience-active' : 'experience-button'}
-              onClick={() => changeOpen(id)}
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') changeOpen(id) }}
-            >
-              {icon}
-              <span className="experience-name">{label}</span>
-            </div>
-          ))}
-        </div>
-
         {/* Experience Sections */}
         <div className="experience-sections">{experienceContent}</div>
       </div>

@@ -1,0 +1,56 @@
+{
+    "schedule": [
+        [
+            "Opening Remarks",
+            "08:00 - 08:05"
+        ],
+        [
+            "Keynote Talk",
+            "08:05 - 09:00"
+        ],
+        [
+            "Invided Talk #1",
+            "09:00 - 09:30"
+        ],
+        [
+            "Poster Session and Coffee Break",
+            "09:30 - 10:15"
+        ],
+        [
+            "Panel Discussion",
+            "10:15 - 11:30"
+        ],
+        [
+            "Invited Talk #2",
+            "11:30 - 12:00"
+        ],
+        [
+            "Invited Talk #3",
+            "12:00 - 12:30"
+        ],
+        [
+            "Lunch Break",
+            "12:30 - 02:00"
+        ],
+        [
+            "Invited Talk #4",
+            "02:00 - 02:30"
+        ],
+        [
+            "Lightining Talks for Posters",
+            "02:30 - 03:00"
+        ],
+        [
+            "Poster Session and Coffee Break",
+            "03:00 - 03:45"
+        ],
+        [
+            "Research Paper Session",
+            "03:45 - 04:55"
+        ],
+        [
+            "Closing Remarks",
+            "04:55 - 05:00"
+        ]
+    ]
+}

@@ -12,7 +12,7 @@ import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 
 function App() {
-  const links = ['About', 'Skills', 'Experience', 'Projects']; // You can modify this as needed
+  const links = ['Home', 'Committees', 'Program', 'Past Events']; // You can modify this as needed
 
   return (
     <div className="App">

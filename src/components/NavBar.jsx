@@ -42,7 +42,7 @@ export default function NavBar({ links }) {
               component={Link}   // <--- Make the Button render as a react-scroll Link
               to="home"          // <--- Target the "home" (or "top") section ID
               smooth={true}      // <--- Enable smooth scrolling
-              offset={-70}       // <--- Adjust if you have a fixed header, otherwise can be 0
+              offset={0}       // <--- Adjust if you have a fixed header, otherwise can be 0
               duration={500}     // <--- Scroll speed in milliseconds
             >
               <Typography component="div">NK</Typography>
@@ -63,7 +63,7 @@ export default function NavBar({ links }) {
               offset={-70}       
               duration={500}     
             >
-              <Typography component="div">NK</Typography>
+              <Typography component="div">WACV</Typography>
             </Button>
 
             <Box
@@ -96,52 +96,6 @@ export default function NavBar({ links }) {
                 ))}
               </Tabs>
 
-              <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-                {/* LinkedIn Button */}
-                <IconButton
-                    sx={{ background: 'rgba(2,0,36,1)' }}
-                    component="a" // <--- PLACE THESE PROPS HERE on the IconButton
-                    href="https://www.linkedin.com/in/naveen-kamath-434668287/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <LinkedInIcon sx={{ color: 'white', '&:hover': { color: 'black' } }} />
-                </IconButton>
-
-                {/* GitHub Button */}
-                <IconButton
-                    sx={{ background: 'rgba(2,0,36,1)' }}
-                    component="a" // <--- PLACE THESE PROPS HERE on the IconButton
-                    href="https://www.github.com/NaveenMachine"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <GitHubIcon sx={{ color: 'white', '&:hover': { color: 'black' } }} />
-                </IconButton>
-
-                {/* Instagram Button */}
-                <IconButton
-                    sx={{ background: 'rgba(2,0,36,1)' }}
-                    component="a" // <--- PLACE THESE PROPS HERE on the IconButton
-                    href="https://www.instagram.com/naveenkamath_/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <InstagramIcon sx={{ color: 'white', '&:hover': { color: 'black' } }} />
-                </IconButton>
-
-                <Button
-                    sx={{ marginLeft: 5, background: 'rgba(2,0,36,1)' }}
-                    variant="contained"
-                    component={Link} // <--- ADD THIS
-                    to="contact"     // <--- ADD THIS (assuming your contact section's ID is "contact")
-                    smooth={true}    // <--- ADD THIS
-                    offset={-70}     // <--- ADD THIS (adjust if your navbar height changes)
-                    duration={500}   // <--- ADD THIS
-                >
-                    Contact
-                </Button>
-            </Box>
             </Box>
           </>
         )}
