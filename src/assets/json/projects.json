@@ -1,0 +1,21 @@
+{
+    "Lanarchy Website": {
+        "tools": "React.js, CSS, Bootstrap",
+        "description": "Custom website for Ohio State Gaming Club.",
+        "imagePath": "LanarchyWebsite.avif",
+        "link": "https://github.com/NaveenMachine/LANarchyWebsite"
+    },
+    "Eye Tracing Keyboard": {
+        "tools": "Python, OpenCV, Flask, HTML, CSS", 
+        "description": "Keyboard that allows people to type with their pupils.",
+        "imagePath": "EyeTrackingKeyboard.avif",
+        "link": "https://github.com/NaveenMachine/LockedInKeyboard"
+    },
+    "Degree Audit Parser": {
+        "tools": "React.js, Python, Ohio State Class Api",
+        "description": "The 'Degree Audit Parser,' a modern and user-friendly Degree Audit.",
+        "imagePath": "DegreeAudit.avif",
+        "link": "https://github.com/MatGBust/degreeAuditParser"
+    }
+    
+}

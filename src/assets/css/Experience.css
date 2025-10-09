@@ -1,0 +1,194 @@
+.experience-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .experience-tabs {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+  }
+  
+  .experience-button {
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.4s;
+    align-items: center;
+    display: flex;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: transparent;
+    color: white;
+  }
+  
+  .experience-icon {
+    font-size: 30px;
+  }
+  
+  /* Initially hidden text label */
+  .experience-button .experience-name {
+    max-width: 0;
+    overflow: hidden;
+    transition: max-width 0.6s ease-in-out, margin-left 0.4s ease;
+    white-space: nowrap;
+  }
+  
+  .experience-button:hover .experience-name,
+  .experience-active .experience-name {
+    max-width: 300px;
+    margin-left: 10px;
+  }
+  
+  .experience-sections {
+    position: relative;
+  }
+  
+  .experience-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+  }
+  
+  .experience-active {
+    display: block;
+    opacity: 1;
+  }
+  
+  .experience-data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+  }
+  
+  .right {
+    text-align: right;
+  }
+  
+  .left {
+    text-align: left;
+  }
+  
+  .right,
+  .left {
+    margin-bottom: 20px;
+  }
+  
+  .experience-title {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+  
+  .experience-subtitle {
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .experience-calendar {
+    font-size: 18px;
+    color: #B8B8B8;
+    display: flex;
+    align-items: center;
+  }
+  
+  .right .experience-calendar {
+    justify-content: flex-end;
+  }
+  
+  .experience-calendar svg {
+    margin-right: 10px;
+  }
+  
+  .experience-rounder {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  .experience-line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: white;
+    transform: translate(6px, -7px);
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 1200px) {
+    .experience-button {
+      font-size: 20px;
+    }
+  
+    .experience-icon {
+      font-size: 25px;
+    }
+  
+    .experience-title {
+      font-size: 20px;
+    }
+  
+    .experience-subtitle {
+      font-size: 16px;
+    }
+  
+    .experience-calendar {
+      font-size: 16px;
+    }
+  
+    .experience-tabs {
+      margin-top: 30px;
+      margin-bottom: 25px;
+    }
+  
+    .experience-container {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .experience-container {
+      width: 100%;
+    }
+  
+    .experience-icon {
+      font-size: 18px;
+    }
+  
+    .experience-button {
+      font-size: 16px;
+    }
+  
+    .experience-title {
+      font-size: 14px;
+    }
+  
+    .experience-subtitle {
+      font-size: 12px;
+    }
+  
+    .experience-calendar {
+      font-size: 12px;
+    }
+  
+    .experience-data {
+      column-gap: 1rem;
+    }
+  
+    .experience-calendar svg {
+      display: none;
+    }
+  
+    .experience-button .experience-name {
+      display: none;
+    }
+  
+    .experience-button:hover .experience-name {
+      display: inline;
+      max-width: 100px;
+      margin-left: 5px;
+    }
+  }
+  
