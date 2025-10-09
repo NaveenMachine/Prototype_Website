@@ -34,7 +34,7 @@ export default function DrawerComp({ links }) {
           }}
         >
           <Typography variant="h6" component="div" sx={{ color: 'white', marginBottom: 2 }}>
-            Naveen's Portfolio
+            WACV 2026
           </Typography>
           <List>
             {/* 2. Modify the mapped links */}

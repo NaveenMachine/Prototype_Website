@@ -45,7 +45,7 @@ export default function NavBar({ links }) {
               offset={0}       // <--- Adjust if you have a fixed header, otherwise can be 0
               duration={500}     // <--- Scroll speed in milliseconds
             >
-              <Typography component="div">NK</Typography>
+              <Typography component="div">WACV</Typography>
             </Button>
             <DrawerComp links={links} />
           </>
