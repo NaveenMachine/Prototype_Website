@@ -82,38 +82,34 @@ const Contact = () => {
                         <img src = {contactImg} alt="Contact Me"></img>
                     </Col>
                     <Col>
-                        <h1>Get In Touch</h1>
+                        <h1>Apply</h1>
                         <form ref={form} onSubmit={sendEmail}>
                             <Row>
-                                <Col size={12} sm={6} className="px-1">
-                                    <input name="first_name" type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} required/>
-                                </Col>
-                                <Col size={12} sm={6} className="px-1">
-                                <input name="last_name" type="text" value={formDetails.lastName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)} required/>
+                                <Col size={12} sm={12} className="column">
+                                    <b>Workshop Dates:</b> 6-7 March 2026
+                                </Col> 
+                            </Row>
+                            <Row>
+                                <Col size={12} sm={12} className="column">
+                                    <b>General Application Deadline: </b>
+                                </Col> 
+                            </Row>
+                            <Row>
+                                <Col size={12} sm={12} className="column">
+                                    <b>Camera-ready deadline:</b>  Jan 09, 2026 11:59 PM PST 
                                 </Col>
                             </Row>
                             <Row>
                                 <Col size={12} className="px-1">
-                                    <input name="email" type="email" value={formDetails.email} placeholder="Email" onChange={(e) => onFormUpdate('email', e.target.value)} required/>
-                                </Col>
-                            </Row>
-                            <Row>
-                                <Col size={12} className="px-1">
-                                    <textarea name="message" rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)} required/>
-                                    <button type="submit">
+                                   
+                                    <button >
                                         <span>
-                                            {buttonText}
+                                            Apply
                                         </span>
                                     </button>
                                 </Col>
                             </Row>
-                            {/* Status message display (if you haven't added this from previous suggestions) */}
-                            {
-                                status.message &&
-                                <Col>
-                                    <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
-                                </Col>
-                            }
+                            
                         </form>
                     </Col>
                 </Row>

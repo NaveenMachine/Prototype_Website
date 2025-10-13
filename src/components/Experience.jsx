@@ -60,6 +60,7 @@ const Experience = () => {
         key={sectionKey}
         className="experience-content experience-active"
         style={{ opacity }}
+        id="program"
       >
         {items.map((item, index) => (
           <div className="experience-data" key={`${item[0]}-${index}`}>

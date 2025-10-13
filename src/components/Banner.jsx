@@ -67,6 +67,8 @@ const Banner = () => {
                             {`WACV 2026 Workshop`}
                         </h1>
                         <p>{banner_text}</p>
+                        <p>Workshop Dates: 6-7 March 2026</p>
+                        
                         
                     </Col>
                     <Col xs={12} md={6} xl={5} className="img-col">

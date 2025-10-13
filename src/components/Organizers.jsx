@@ -57,7 +57,7 @@ const Organizers = () => {
         </Col>
         <Col xs={12} lg={5}>
             <p>
-            <strong>Hari Subramoni</strong>, The Ohio State Unveristy. <code>subramoni.1@osu.edu</code>, 
+            <strong>Hari Subramoni</strong>, The Ohio State Unveristy. <code>subramoni.1@osu.edu</code><br/> 
             <a href="https://cse.osu.edu/people/subramoni.1">https://cse.osu.edu/people/subramoni.1</a><br/>
             Hari Subramoni is an Assistant Professor in the Department of Computer Science and Engineering at OSU. His research interests include HPC,
             high-performance networks, distributed deep/machine learning, digital agriculture, conversational interfaces, and exascale computing. He also leads the digital agriculture thrust in the NSF-funded ICICLE AI institute. He has published over 170 papers in international journals and conferences related to these research areas.
@@ -74,7 +74,7 @@ const Organizers = () => {
         </Col>
         <Col xs={12} lg={5}>
             <p>
-            <strong>Scott Shearer</strong>, The Ohio State Unveristy. <code>shearer.95@osu.edu</code>, 
+            <strong>Scott Shearer</strong>, The Ohio State Unveristy. <code>shearer.95@osu.edu</code> <br/> 
             <a href="https://fabe.osu.edu/our-people/scott-shearer">https://fabe.osu.edu/our-people/scott-shearer</a><br/>
             Scott Shearer serves as Professor and Chair of Food, Agricultural and Biological Engineering at OSU. Prior to 2011 he was Chair of Biosystems and Agricultural Engineering at the University of Kentucky. His significant contributions include the development of methodologies and controls for metering and spatial applying crop production inputs (seed, fertilizer and pesticides); modeling of agricultural field machinery; autonomous multi-vehicle field production systems; strategies for deployment of UAS in agriculture; and analyses of production agriculture data sets.
             </p>

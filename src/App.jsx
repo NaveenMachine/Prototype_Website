@@ -19,7 +19,7 @@ import Attendees from './components/Attendees.jsx';
 import Journal from './components/Journal.jsx';
 
 function App() {
-  const links = ['Home', 'Committees', 'Program', 'Past Events']; // You can modify this as needed
+  const links = ['Home', 'Committee', 'Program', 'Past Events']; // You can modify this as needed
 
   return (
     <div className="App">
