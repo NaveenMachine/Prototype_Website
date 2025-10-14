@@ -47,7 +47,7 @@ const Attendees = () => {
         <Col xs={12} lg={12}>
             <p>
             This is the second edition of the workshop. Based on the attendence in the first edition and the popularity of
-            WACV, we estimate 30 to 40 attendees.
+            WACV, we estimate 30 to 40 attendees. The requested number of poster boards is 8-10.
             </p>
         </Col>
       </Row>

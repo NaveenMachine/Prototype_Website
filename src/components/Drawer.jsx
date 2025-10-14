@@ -52,32 +52,7 @@ export default function DrawerComp({ links }) {
               </ListItemButton>
             ))}
             
-            {/* 3. Wrap social media icons in <a> tags */}
-            <Box
-              sx={{
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                gap: 2,
-                marginTop: 2,
-              }}
-            >
-              <a href="https://linkedin.com/in/naveen-kamath-434668287" target="_blank" rel="noopener noreferrer">
-                <IconButton sx={{ background: 'white' }}>
-                  <LinkedInIcon sx={{ color: 'black', '&:hover': { color: 'white' } }} />
-                </IconButton>
-              </a>
-              <a href="https://github.com/NaveenMachine" target="_blank" rel="noopener noreferrer">
-                <IconButton sx={{ background: 'white' }}>
-                  <GitHubIcon sx={{ color: 'black', '&:hover': { color: 'white' } }} />
-                </IconButton>
-              </a>
-              <a href="https://instagram.com/naveenkamath_/" target="_blank" rel="noopener noreferrer">
-                <IconButton sx={{ background: 'white' }}>
-                  <InstagramIcon sx={{ color: 'black', '&:hover': { color: 'white' } }} />
-                </IconButton>
-              </a>
-            </Box>
+           
 
             {/* 4. Modify the Contact button */}
             <Box
@@ -104,7 +79,7 @@ export default function DrawerComp({ links }) {
                 }}
                 variant="contained"
               >
-                Contact
+                Apply
               </Button>
             </Box>
           </List>

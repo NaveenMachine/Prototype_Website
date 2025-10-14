@@ -82,7 +82,7 @@ const Contact = () => {
                         <img src = {contactImg} alt="Contact Me"></img>
                     </Col>
                     <Col>
-                        <h1>Apply</h1>
+                        <h1>Submission Instructions</h1>
                         <form ref={form} onSubmit={sendEmail}>
                             <Row>
                                 <Col size={12} sm={12} className="column">
@@ -91,7 +91,7 @@ const Contact = () => {
                             </Row>
                             <Row>
                                 <Col size={12} sm={12} className="column">
-                                    <b>General Application Deadline: </b>
+                                    <b>General Application Deadline: </b>Dec 07 2025 11:59PM UTC-0
                                 </Col> 
                             </Row>
                             <Row>
@@ -102,11 +102,12 @@ const Contact = () => {
                             <Row>
                                 <Col size={12} className="px-1">
                                    
-                                    <button >
-                                        <span>
-                                            Apply
-                                        </span>
-                                    </button>
+                                <button
+                                    onClick={() => window.open("https://openreview.net/group?id=thecvf.com/WACV/2026", "_blank")}
+                                    >
+                                    <span>Apply</span>
+                                </button>
+
                                 </Col>
                             </Row>
                             
