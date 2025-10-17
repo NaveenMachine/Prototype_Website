@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import '../assets/css/About.css';
 import data from '../assets/json/chunk-text.json';
-import resume from '../assets/resume.pdf';
-
 const images = import.meta.glob('../assets/img/lab/*.{png,jpg,jpeg,svg,avif}', { eager: true });
 
 const About = () => {
