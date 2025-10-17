@@ -43,7 +43,7 @@ const Motivation = () => {
   return (
     <section className="about" id="about">
       <h2>Motivation, Impact, and Expected Outcomes</h2>
-      <Row className="align-items-center">
+      <Row className="left-align">
         <Col xs={12} lg={12}>
         <p>
 The rapid growth of computer vision (CV) and artificial intelligence (AI) is reshaping agriculture, offering new approaches to challenges in food security, climate resilience, and sustainability. Scaling these technologies requires bridging core CV research with domain-specific data infrastructures and practical user needs. Key applications include crop and soil monitoring, pest and disease detection, yield forecasting, and resource optimization. Yet, these tasks are hindered by heterogeneous field data, limited labeled datasets—especially in edge environments—and the demand for models that are both scalable and interpretable.

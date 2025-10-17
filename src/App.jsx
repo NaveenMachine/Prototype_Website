@@ -36,9 +36,6 @@ function App() {
             <Organizers />
             <Committee />
             <Experience />
-            <Speakers />
-            <Attendees />
-            <Journal />
             <SocialImpact />
           </Container>
         </section>

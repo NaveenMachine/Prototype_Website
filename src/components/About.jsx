@@ -42,7 +42,7 @@ const About = () => {
   return (
     <section className="about" id="about">
       <h2>Tentative Call for Papers</h2>
-      <Row className="align-items-center">
+      <Row className="left-align">
         <Col xs={12} lg={12}>
           <p>{about_text}</p>
         </Col>

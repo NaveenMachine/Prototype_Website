@@ -64,9 +64,8 @@ const Banner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7} className="column">
                         <h1>
-                            {`WACV 2026 Workshop`}
+                            {`HARVEST-Vision: Second International Workshop on Applications of CV and HPC in Agriculture`}
                         </h1>
-                        <p>{banner_text}</p>
                         <p>Workshop Dates: 6-7 March 2026</p>
                         
                         

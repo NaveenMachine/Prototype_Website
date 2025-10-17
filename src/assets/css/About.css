@@ -3,6 +3,10 @@
     margin-top: 10px;
     margin-bottom: 100px;
   }
+
+  .left-align {
+    text-align: left;
+  }
   
   .about p {
     color: #B8B8B8;
