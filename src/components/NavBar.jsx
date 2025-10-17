@@ -8,15 +8,10 @@ import {
   Tab,
   Box,
   Button,
-  IconButton,
 } from '@mui/material';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { Link as RouterLink } from 'react-router-dom';
 import { useState } from 'react';
-import DrawerComp from './Drawer';
 import PropTypes from 'prop-types';
-import { Link } from 'react-scroll';
 
 export default function NavBar({ links }) {
   const theme = useTheme();
@@ -31,93 +26,48 @@ export default function NavBar({ links }) {
       }}
     >
       <Toolbar>
-        {isMatch ? (
-          <>
-            <Button
-              sx={{
-                background: 'rgba(2,0,36,1)',
-                '&:hover': { background: 'rgba(2,0,36,0.8)' },
-                color: 'white',
-              }}
-              component={Link}   // <--- Make the Button render as a react-scroll Link
-              to="home"          // <--- Target the "home" (or "top") section ID
-              smooth={true}      // <--- Enable smooth scrolling
-              offset={0}       // <--- Adjust if you have a fixed header, otherwise can be 0
-              duration={500}     // <--- Scroll speed in milliseconds
-            >
-              <Typography component="div">WACV</Typography>
-            </Button>
-            <DrawerComp links={links} />
-          </>
-        ) : (
-          <>
-            <Button
-              sx={{
-                background: 'rgba(2,0,36,1)',
-                '&:hover': { background: 'rgba(2,0,36,0.8)' },
-                color: 'white',
-              }}
-              component={Link}   
-              to="home"         
-              smooth={true}      
-              offset={-70}       
-              duration={500}     
-            >
-              <Typography component="div">WACV</Typography>
-            </Button>
+        <Button
+          sx={{ background: 'transparent', color: 'white', width: '250px' }}
+          component={RouterLink}
+          to="/"
+        >
+          <Typography>HARVEST-Vision 2026</Typography>
+        </Button>
 
-            <Box
-              sx={{
-                width: '100%',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-              }}
-            >
-              <Tabs
-                sx={{ marginLeft: 5 }}
-                indicatorColor="secondary"
-                textColor="inherit"
-                value={value}
-                // The onChange is less critical now, but we'll keep it
-                onChange={(e, val) => setValue(val)}
-              >
-                {links.map((link, index) => (
-                  <Tab
-                    key={index}
-                    label={link}
-                    // This is the magic part:
-                    component={Link} // 1. Render the Tab as a react-scroll Link
-                    to={link.toLowerCase()} // 2. Set the target section ID
-                    smooth={true}      // 3. Enable smooth scrolling
-                    offset={-70}       // 4. Offset for your fixed navbar
-                    duration={500}     // 5. Set the scroll speed
-                  />
-                ))}
-              </Tabs>
-              <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-                
-                <Button
-                    sx={{ marginLeft: 5, background: 'rgba(2,0,36,1)' }}
-                    variant="contained"
-                    component={Link} // <--- ADD THIS
-                    to="contact"     // <--- ADD THIS (assuming your contact section's ID is "contact")
-                    smooth={true}    // <--- ADD THIS
-                    offset={-70}     // <--- ADD THIS (adjust if your navbar height changes)
-                    duration={500}   // <--- ADD THIS
-                >
-                    Apply
-                </Button>
-            </Box>
-
-            </Box>
-          </>
-        )}
+        <Box sx={{ width: '100%', display: 'flex', justifyContent: 'space-between' }}>
+          <Tabs
+            value={value}
+            onChange={(e, val) => setValue(val)}
+            indicatorColor="secondary"
+            textColor="inherit"
+          >
+            {links.map((link, index) => (
+              <Tab
+                key={index}
+                label={link.label}
+                component={RouterLink}
+                to={link.path}
+              />
+            ))}
+          </Tabs>
+          <Button
+            sx={{ marginLeft: 5, background: 'rgba(2,0,36,1)' }}
+            variant="contained"
+            onClick={() => window.open("https://www.computer.org/csdl/proceedings/1000040", "_blank")}
+          >
+            Apply
+          </Button>
+        </Box>
       </Toolbar>
     </AppBar>
   );
 }
 
 NavBar.propTypes = {
-  links: PropTypes.arrayOf(PropTypes.string).isRequired,
+  links: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      path: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };

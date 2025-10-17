@@ -66,7 +66,7 @@ const Banner = () => {
                         <h1>
                             {`HARVEST-Vision: Second International Workshop on Applications of CV and HPC in Agriculture`}
                         </h1>
-                        <p>Workshop Dates: 6-7 March 2026</p>
+                        <p>Workshop Date: 6 March 2026</p>
                         
                         
                     </Col>

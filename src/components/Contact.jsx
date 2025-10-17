@@ -103,7 +103,7 @@ const Contact = () => {
                                 <Col size={12} className="px-1">
                                    
                                 <button
-                                    onClick={() => window.open("https://openreview.net/group?id=thecvf.com/WACV/2026", "_blank")}
+                                    onClick={() => window.open("https://www.computer.org/csdl/proceedings/1000040", "_blank")}
                                     >
                                     <span>Apply</span>
                                 </button>
