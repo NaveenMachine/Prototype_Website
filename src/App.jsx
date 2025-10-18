@@ -18,6 +18,10 @@ import SocialImpact from './components/SocialImpact.jsx';
 import Speakers from './components/Speakers.jsx';
 import Attendees from './components/Attendees.jsx';
 import Journal from './components/Journal.jsx';
+import Exacomm2015Page from './components/Exacomm2015/Page.jsx';
+import Exacomm2016Page from './components/Exacomm2016/Page.jsx';
+
+
 
 function App() {
   const links = [
@@ -90,16 +94,9 @@ function App() {
           />
 
           {/* 📅 Dynamic Past Event pages (2024, 2023, etc.) */}
-          <Route
-            path="/past-events/:year"
-            element={
-              <section className="body">
-                <Container>
-                  <Journal />
-                </Container>
-              </section>
-            }
-          />
+          {/* Year-specific ExaComm pages */}
+          <Route path="/past-events/2015" element={<Exacomm2015Page />} />
+          <Route path="/past-events/2016" element={<Exacomm2016Page />} />
 
           {/* 🔁 Redirect all unknown paths to Home */}
           <Route path="*" element={<Navigate to="/" replace />} />
