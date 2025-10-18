@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'; // ✅ added Navigate
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import NavBar from './components/NavBar.jsx';
 import Banner from './components/Banner.jsx';
 import About from './components/About.jsx';
@@ -54,32 +54,52 @@ function App() {
           />
 
           {/* 📄 Call for Papers */}
-          <Route path="/call-for-papers" element={
+          <Route
+            path="/call-for-papers"
+            element={
               <section className="body">
                 <Container>
                   <About />
                 </Container>
-            </section>
-            } />
+              </section>
+            }
+          />
 
           {/* 🖼️ Call for Posters */}
-          <Route path="/call-for-posters" element={
-            <section className="body">
-              <Container>
-                <About />
-              </Container>
-            </section>
-          } />
-
-          {/* 📚 Past Events */}
-          <Route path="/past-events" element={
+          <Route
+            path="/call-for-posters"
+            element={
               <section className="body">
-              <Container>
-                <About />
-              </Container>
+                <Container>
+                  <About />
+                </Container>
               </section>
+            }
+          />
 
-          } />
+          {/* 📚 Past Events main page */}
+          <Route
+            path="/past-events"
+            element={
+              <section className="body">
+                <Container>
+                  <Journal />
+                </Container>
+              </section>
+            }
+          />
+
+          {/* 📅 Dynamic Past Event pages (2024, 2023, etc.) */}
+          <Route
+            path="/past-events/:year"
+            element={
+              <section className="body">
+                <Container>
+                  <Journal />
+                </Container>
+              </section>
+            }
+          />
 
           {/* 🔁 Redirect all unknown paths to Home */}
           <Route path="*" element={<Navigate to="/" replace />} />
