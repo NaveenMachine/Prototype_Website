@@ -41,7 +41,6 @@ function App() {
                 <Banner />
                 <section className="body">
                   <Container className="box">
-                    <About />
                     <Organizers />
                     <Committee />
                     <Experience />
@@ -55,13 +54,32 @@ function App() {
           />
 
           {/* 📄 Call for Papers */}
-          <Route path="/call-for-papers" element={<Projects />} />
+          <Route path="/call-for-papers" element={
+              <section className="body">
+                <Container>
+                  <About />
+                </Container>
+            </section>
+            } />
 
           {/* 🖼️ Call for Posters */}
-          <Route path="/call-for-posters" element={<Speakers />} />
+          <Route path="/call-for-posters" element={
+            <section className="body">
+              <Container>
+                <About />
+              </Container>
+            </section>
+          } />
 
           {/* 📚 Past Events */}
-          <Route path="/past-events" element={<Journal />} />
+          <Route path="/past-events" element={
+              <section className="body">
+              <Container>
+                <About />
+              </Container>
+              </section>
+
+          } />
 
           {/* 🔁 Redirect all unknown paths to Home */}
           <Route path="*" element={<Navigate to="/" replace />} />

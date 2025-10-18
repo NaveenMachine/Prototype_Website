@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 import '../assets/css/About.css';
 import data from '../assets/json/chunk-text.json';
 const images = import.meta.glob('../assets/img/lab/*.{png,jpg,jpeg,svg,avif}', { eager: true });
@@ -40,14 +40,29 @@ const About = () => {
   };
 
   return (
-    <section className="about" id="about">
+    <>
+    <section className="banner" id="about">
       <h2>Tentative Call for Papers</h2>
       <Row className="left-align">
         <Col xs={12} lg={12}>
           <p>{about_text}</p>
         </Col>
       </Row>
+      <Row className='about-section text-center'>
+
+        <Col size={12} className="px-1">
+                               
+            <button
+              onClick={() => window.open("https://www.computer.org/csdl/proceedings/1000040", "_blank")}
+>
+              <span>Apply</span>
+            </button>
+
+        </Col>
+    </Row>
+
     </section>
+    </>
   );
 };
 
