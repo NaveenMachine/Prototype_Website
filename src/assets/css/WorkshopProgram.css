@@ -1,0 +1,99 @@
+.program-container {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto 70px auto;
+  }
+  
+  .workshop-program h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Each session container */
+  .program-content {
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    transition: 0.4s;
+  }
+  
+  /* Header (always visible row) */
+  .program-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    transition: 0.4s;
+  }
+  
+  .program-header:hover {
+    letter-spacing: 1px;
+  }
+  
+  .program-time {
+    font-weight: 500;
+    font-size: 16px;
+    color: #555;
+    width: 25%;
+  }
+  
+  .program-title {
+    flex: 1;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .program-arrow {
+    font-size: 22px;
+    transition: transform 0.4s ease;
+  }
+  
+  /* Rotate arrow when open */
+  .program-open .program-arrow {
+    transform: rotate(180deg);
+  }
+  
+  /* Collapsible data area */
+  .program-data {
+    width: 85%;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: max-height 0.7s ease-in-out;
+    max-height: 0;
+  }
+  
+  .program-data[aria-expanded='true'] {
+    max-height: 1000px;
+  }
+  
+  /* Inner details */
+  .program-details p {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.4em;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .program-container {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  
+    .program-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .program-title {
+      text-align: left;
+      font-size: 16px;
+    }
+  
+    .program-time {
+      font-size: 14px;
+    }
+  }
+  

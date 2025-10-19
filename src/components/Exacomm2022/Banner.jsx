@@ -13,10 +13,10 @@ const Banner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7} className="column">
                         <h1>
-                            {`First International Workshop on Communication Architectures at Extreme Scale`}
+                            {`Seventh International Workshop on Communication Architectures for
+HPC, Big Data, Deep Learning and Clouds at Extreme Scale`}
                         </h1>
-                        <p>Workshop Date: Thursday, July 16th, 2015</p>
-                        <p>Location: Messe Frankfurt, Frankfurt, Germany</p>
+                        <p>Workshop Date: Thursday, June 2nd, 2022</p>
                         
                         
                     </Col>

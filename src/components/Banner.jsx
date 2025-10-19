@@ -6,57 +6,7 @@ import headerImg from '../assets/img/lab/stock_image.png'
 import '../assets/css/Banner.css'
 
 const Banner = () => {
-    const banner_text = data.banner
-
-    const [loopNum, setLoopNum] = useState(0)
-    const [isDeleting, setIsDeleting] = useState(false)
-    const toRotate = ["full-stack developer", "machine learning engineer", "sci-fi enthusiast"]
-    const [text, setText] = useState('')
-    const [delta, setDelta] = useState(100)
-    const [scrolled, setScrolled] = useState(false)
-
-    useEffect(() => {
-        const onScroll = () => {
-            if (window.scrollY > 1000) {
-                setScrolled(true)
-            } else {
-                setScrolled(false)
-            }
-        }
-        window.addEventListener('scroll', onScroll)
-
-        let ticker = setInterval(() => {
-            if (scrolled) return
-            tick()
-        }, delta)
-
-        return () => {
-            clearInterval(ticker)
-            window.removeEventListener('scroll', onScroll)
-        }
-    }, [text, scrolled])
-
-    const tick = () => {
-        let i = loopNum % toRotate.length
-        let fullText = toRotate[i]
-
-        let newText = isDeleting
-            ? fullText.substring(0, text.length - 1)
-            : fullText.substring(0, text.length + 1)
-
-        if (!isDeleting && newText === fullText) {
-            setDelta(2000)
-            setIsDeleting(true)
-        } else if (isDeleting && newText === '') {
-            setIsDeleting(false)
-            setLoopNum(loopNum + 1)
-            setDelta(100)
-        } else if (isDeleting) {
-            setDelta(50)
-        }
-
-        setText(newText)
-    }
+    
 
     return (
         <section className="banner" id="home">
