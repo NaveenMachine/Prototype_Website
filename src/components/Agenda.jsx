@@ -1,0 +1,106 @@
+import React, { useState, useEffect } from 'react';
+import { MortarboardFill, BriefcaseFill, CalendarEvent, PeopleFill } from 'react-bootstrap-icons';
+import data from '../assets/json/schedule.json';
+import '../assets/css/Experience.css';
+
+const tabs = [
+  { id: 'schedule', label: 'Schedule', icon: <BriefcaseFill className="experience-icon" /> },
+];
+
+const Agenda = () => {
+  const [open, setOpen] = useState('schedule');
+  const [tempOpen, setTempOpen] = useState('schedule');
+  const [changing, setChanging] = useState(false);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [opacity, setOpacity] = useState(1);
+
+  // Handle fade-out and fade-in effect when changing tabs
+  useEffect(() => {
+    if (!changing) return;
+
+    const step = 0.1;
+    const interval = setInterval(() => {
+      setOpacity(prev => {
+        const newOpacity = isDeleting ? prev - step : prev + step;
+
+        if (isDeleting && newOpacity <= 0) {
+          clearInterval(interval);
+          setOpen(tempOpen);
+          setIsDeleting(false);
+          return 0;
+        }
+
+        if (!isDeleting && newOpacity >= 1) {
+          clearInterval(interval);
+          setChanging(false);
+          return 1;
+        }
+
+        return newOpacity;
+      });
+    }, 25);
+
+    return () => clearInterval(interval);
+  }, [changing, isDeleting, tempOpen]);
+
+  // Trigger fade transition to new tab
+  const changeOpen = (id) => {
+    if (open === id || changing) return; // prevent spamming clicks
+    setTempOpen(id);
+    setChanging(true);
+    setIsDeleting(true);
+  };
+
+  // Render experience content for the currently active tab
+  const experienceContent = Object.entries(data).map(([sectionKey, items]) => {
+    if (sectionKey !== open) return null; // only render active tab content
+
+    return (
+      <div
+        key={sectionKey}
+        className="experience-content experience-active"
+        style={{ opacity }}
+        id="program"
+      >
+        {items.map((item, index) => (
+          <div className="experience-data" key={`${item[0]}-${index}`}>
+            {index % 2 === 1 && (
+              <>
+                <div />
+                <div>
+                  <span className="experience-rounder" />
+                  {index !== items.length - 1 && <span className="experience-line" />}
+                </div>
+              </>
+            )}
+            <div className={index % 2 === 0 ? 'right' : 'left'}>
+              <h3 className="experience-title">{item[0]}</h3>
+              <div className="experience-calendar">
+                <CalendarEvent />
+                <span>{item[1]}</span>
+              </div>
+            </div>
+            {index % 2 === 0 && (
+              <div>
+                <span className="experience-rounder" />
+                {index !== items.length - 1 && <span className="experience-line" />}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    );
+  });
+
+  return (
+    <section className="experience" id="experience">
+      <h2>Agenda</h2>
+      <div className="experience-container">
+        {/* Experience Sections */}
+        <div className="experience-sections">{experienceContent}</div>
+      </div>
+    </section>
+  );
+};
+
+export default Agenda;

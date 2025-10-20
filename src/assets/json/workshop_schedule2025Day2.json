@@ -1,0 +1,90 @@
+{
+    "schedule": [
+      {
+        "time": "11:00 - 11:05",
+        "title": "Opening Remarks",
+        "speakers": ["Dhabaleswar K (DK) Panda, The Ohio State University"]
+      },
+      {
+        "time": "11:05 - 12:00",
+        "title": "Keynote: Building a Data Infrastructure for Agriculture in Arizona",
+        "speaker": "Arthur 'Barney' Maccabe, University of Arizona, USA",
+        "chair": "Hari Subramoni",
+        "abstract": "While Arizona is not likely to be one of the first states that comes to mind when thinking about agricultural production in the US...",
+        "bio": "Arthur B. (Barney) Maccabe is a professor in the College of Information Science at The University of Arizona..."
+      },
+      {
+        "time": "12:00 - 12:30",
+        "title": "Invited Talk 4: NSF Office of Advanced Cyberinfrastructure’s funding opportunity on HPC and AI",
+        "speaker": "Sheikh Ghafoor, National Science Foundation, USA",
+        "abstract": "The Office of Advanced Cyberinfrastructure (OAC) supports and coordinates the development, acquisition, and provision of state-of-the-art cyberinfrastructure resources...",
+        "bio": "Sheikh Ghafoor is a professor of Computer Science at Tennessee Tech University and program director at the US National Science Foundation..."
+      },
+      {
+        "time": "12:30 - 2:00",
+        "title": "Lunch"
+      },
+      {
+        "time": "2:00 - 3:30",
+        "title": "Research Paper Session",
+        "chair": "Hari Subramoni",
+        "papers": [
+          {
+            "title": "Ortho-Fuse: Orthomosaic Generation for Sparse High-Resolution Crop Health Datasets Through Intermediate Optical Flow Estimation",
+            "authors": ["Rugved Katole, OSU", "Christopher Stewart, OSU"]
+          },
+          {
+            "title": "HARVEST Inference: Characterizing Digital Agriculture Workloads across Compute Continuum",
+            "authors": ["Tian Chen, OSU", "Quentin Anthony, OSU", "Dhabaleswar K. Panda, OSU"]
+          },
+          {
+            "title": "An HPC Framework for Multi-Modal Plant Phenotyping Integrating Controlled Environment and Open Field Studies",
+            "authors": ["Sungchan Oh, Purdue University", "Libo Zhang, Purdue University", "Yang Yang, Purdue University", "Mitch Tuinstra, Purdue University"]
+          },
+          {
+            "title": "PhenoTracker: A machine learning model to track grape phenology",
+            "authors": ["Nathan Balcarcel, Washington State University", "Paola Pesantez-Cabrera, Washington State University", "Kristen Goebel, Oregon State University", "Markus Keller, Washington State University", "Lav Khot, Washington State University", "Alan Fern, Oregon State University", "Ananth Kalyanaraman, Washington State University"]
+          },
+          {
+            "title": "XAIPath: Temporal-Environmental Explainable AI Framework for Co-Contaminated Food Pathogen Detection in Microscopic Imaging",
+            "authors": ["Anas AlSobeh, Southern Illinois University", "Amer AbuGhazaleh, Southern Illinois University", "Namariq Dhahir, Southern Illinois University", "Malek Rababa, Southern Illinois University"]
+          }
+        ]
+      },
+      {
+        "time": "3:30 - 4:00",
+        "title": "Coffee Break"
+      },
+      {
+        "time": "4:00 - 5:00",
+        "title": "Paper Presentation Session"
+      },
+      {
+        "time": "5:00 - 5:25",
+        "title": "Research Posters and Demo Session",
+        "projects": [
+          {
+            "title": "WILD-OV: Weakly-supervised Inference for Localization and Detection in Ecological and Agricultural Visual Scenes Using Open Vocabulary Models",
+            "authors": ["Anirudh Potlapally, OSU"]
+          },
+          {
+            "title": "ArrayMorph: Efficient Edge-to-Cloud Data Management for Machine Learning",
+            "authors": ["Tinggang Wang, OSU"]
+          },
+          {
+            "title": "Mining Earth's Digital Strata for Geospatial AI: Bridging Data Collection, Synthesis, and Self-Training for Intelligent Earth Observation",
+            "authors": ["Aswathnarayanan Radhakrishnan, OSU"]
+          }
+        ]
+      },
+      {
+        "time": "5:25 - 5:30",
+        "title": "Closing Remarks",
+        "speakers": [
+          "Hari Subramoni, The Ohio State University",
+          "Scott Shearer, The Ohio State University"
+        ]
+      }
+    ]
+  }
+  

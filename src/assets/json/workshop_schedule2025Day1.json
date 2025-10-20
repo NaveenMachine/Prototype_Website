@@ -1,0 +1,79 @@
+{
+    "schedule": [
+      {
+        "time": "11:00 - 11:05",
+        "title": "Opening Remarks",
+        "speakers": ["Dhabaleswar K (DK) Panda, The Ohio State University"]
+      },
+      {
+        "time": "11:05 - 12:00",
+        "title": "Keynote: Plows to Neurons: The Role of HPC and AI in Agriculture",
+        "speaker": "Nicholas Butts, John Deere, USA",
+        "chair": "Scott Shearer",
+        "abstract": "The convergence of High-Performance Computing (HPC) and Artificial Intelligence (AI) is revolutionizing the landscape of autonomy and automation in agriculture. In this keynote, we explore how HPC serves as the backbone for advancing AI-driven systems, unlocking new capabilities in decision-making, real-time processing, and adaptive control...",
+        "bio": "Nicholas Butts has over 25 years of experience in embedded systems. He holds both a B.S. and M.S. in Electrical Engineering from North Dakota State University..."
+      },
+      {
+        "time": "12:00 - 12:30",
+        "title": "Invited Talk 1: AI – Agricultural Interoperability: Evolving Data Standards in the Era of Artificial Intelligence",
+        "speaker": "Ben Craker, AgGateway, USA",
+        "abstract": "For over two decades, AgGateway has addressed data interoperability challenges across the agricultural value chain...",
+        "bio": "Ben Craker is the Portfolio Manager at AgGateway, a global nonprofit organization..."
+      },
+      {
+        "time": "12:30 - 2:00",
+        "title": "Lunch"
+      },
+      {
+        "time": "2:00 - 3:30",
+        "title": "Panel Discussion: Current and Future Deployment of AI in Agriculture",
+        "moderator": "Scott Shearer",
+        "panelists": [
+          "Nicholas Butts, John Deere, USA",
+          "Ben Craker, AgGateway, USA",
+          "Arthur 'Barney' Maccabe, University of Arizona, USA",
+          "Rich Wolski, University of California Santa Barbara, USA",
+          "Steven J. Thomson, USDA National Institute of Food and Agriculture, USA"
+        ]
+      },
+      {
+        "time": "3:30 - 4:00",
+        "title": "Coffee Break"
+      },
+      {
+        "time": "4:00 - 4:30",
+        "title": "Invited Talk 2: xGFabric: Coupling Sensor Networks and High-performance Computing Facilities with Advanced Wireless Networks for Near Real-Time Simulation of Digital Agriculture",
+        "speaker": "Rich Wolski, University of California Santa Barbara, USA",
+        "abstract": "Modern agriculture faces urgent challenges from climate variability and increasing global demands that require rapid, real-time decision support...",
+        "bio": "Dr. Rich Wolski is a Professor of Computer Science at the University of California, Santa Barbara..."
+      },
+      {
+        "time": "4:30 - 5:00",
+        "title": "Invited Talk 3: Funding Opportunities at the Intersection of Agricultural and Computer Science at the USDA-NIFA",
+        "speaker": "Steven J. Thomson, USDA National Institute of Food and Agriculture, USA",
+        "abstract": "The USDA-NIFA funds projects involving sensing, mechanization, modeling, water, nutrient, and general crop and animal management that involve Machine Learning and AI...",
+        "bio": "Dr. Steven J. Thomson is National Program Leader (NPL) with the USDA National Institute of Food and Agriculture (NIFA)..."
+      },
+      {
+        "time": "5:00 - 5:25",
+        "title": "HARVEST Demo",
+        "speakers": [
+          "Matt Lieber, The Ohio State University",
+          "Anirudh Potlapally, The Ohio State University"
+        ]
+      },
+      {
+        "time": "5:25 - 5:30",
+        "title": "Closing Remarks",
+        "speakers": [
+          "Hari Subramoni, The Ohio State University",
+          "Scott Shearer, The Ohio State University"
+        ]
+      },
+      {
+        "time": "5:35 - 7:00",
+        "title": "Visit to SDSC Computing Facilities"
+      }
+    ]
+  }
+  
