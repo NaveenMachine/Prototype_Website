@@ -14,7 +14,7 @@
         "bio": "Scott Atchley is a Distinguished Scientist with the Oak Ridge National Laboratory’s National Center for Computational Science. He is the Systems Architecture team lead within the Technology Integration Group in the Advanced Technologies Section. Scott and his team focus on understanding technology trends and application needs in order to guide system procurements. Scott has been heavily involved in DOE’s Exascale Computing Initiative and Project, serving as DOE Technical Representative for AMD’s FastForward-2 Node architecture program and AMD’s PathForward program.",
         "attachments": {
           "pdf": "",
-          "youtube": ""
+          "youtube": "https://www.youtube.com/watch?v=9PPGvqvWW8s"
         }
       },
       {
@@ -38,7 +38,7 @@
         "bio": "Rob Sherwood is the CTO of the Connectivity Group at Intel, leading IPDK open-source efforts and data center pathfinding. He previously led Facebook’s network reliability and FBOSS, was CTO of Big Switch Networks, and worked with Deutsche Telekom on SDN and OpenFlow. Rob holds a Ph.D. in Computer Science from the University of Maryland.",
         "attachments": {
           "pdf": "",
-          "youtube": ""
+          "youtube": "https://www.youtube.com/watch?v=CvUe4EZBNlQ"
         }
       },
       {
@@ -54,7 +54,7 @@
         "bio": "Dr. Yuichiro Ajima is Principal Architect at Fujitsu, responsible for the Tofu interconnect series used in K computer, Fugaku, and PRIMEHPC systems. He holds a Ph.D. from the University of Tokyo and has received multiple national awards including the Medal of Honor with Purple Ribbon.",
         "attachments": {
           "pdf": "",
-          "youtube": ""
+          "youtube": "https://www.youtube.com/watch?v=q4LkF33YMJ4"
         }
       },
       {
@@ -66,7 +66,7 @@
         "bio": "Phil Murphy is CEO of Cornelis Networks and was formerly a director at Intel responsible for fabric architecture and business development. He co-founded SilverStorm Technologies and has held leadership roles in QLogic’s HPC division. Phil holds an MS in Computer and Information Science from the University of Pennsylvania.",
         "attachments": {
           "pdf": "",
-          "youtube": ""
+          "youtube": "https://www.youtube.com/watch?v=sQQBejroprM"
         }
       },
       {
@@ -78,7 +78,7 @@
         "bio": "Brendan Bouffler has over 25 years of experience building HPC systems worldwide. He leads HPC strategy at AWS, previously managed HPC across Asia, and holds a degree in Physics. He’s based in London and is a frequent speaker on large-scale cloud HPC.",
         "attachments": {
           "pdf": "",
-          "youtube": ""
+          "youtube": "https://www.youtube.com/watch?v=049g8BUbsVs"
         }
       },
       {
@@ -94,7 +94,7 @@
         "bio": "John Shalf is Department Head for Computer Science at Lawrence Berkeley National Laboratory and was Deputy Director of Hardware Technology for the DOE Exascale Computing Project. He coauthored the landmark report 'The Landscape of Parallel Computing Research' and numerous publications shaping modern HPC research.",
         "attachments": {
           "pdf": "",
-          "youtube": ""
+          "youtube": "https://www.youtube.com/watch?v=aUazUuLALRo"
         }
       },
       {
@@ -118,7 +118,7 @@
         "bio": "Dr. Hemal Shah is Distinguished Engineer at Broadcom’s Data Center Solutions Group, leading NIC architecture and RDMA offload strategy. He has co-authored 70+ DMTF specifications, four IETF RFCs, and holds 40+ patents. Hemal earned his Ph.D. in Computer Engineering from Purdue University.",
         "attachments": {
           "pdf": "",
-          "youtube": ""
+          "youtube": "https://www.youtube.com/watch?v=pmVFRgXXmI0"
         }
       },
       {
@@ -146,7 +146,7 @@
         "bio": "Matt Williams is CTO of Rockport Networks with 25 years of experience across five generations of network architectures. He has held senior technical roles at high-growth networking companies and is an active HPC community speaker. Matt holds a B.Sc. in Electrical Engineering from Queen’s University.",
         "attachments": {
           "pdf": "",
-          "youtube": ""
+          "youtube": "https://www.youtube.com/watch?v=ZnDFQ4mePC4"
         }
       },
       {
@@ -163,7 +163,7 @@
         "bio": "Arthur B. (Barney) Maccabe is Executive Director of the Institute for the Future of Data and Computing at the University of Arizona. He previously directed the Computer Science and Mathematics Division at Oak Ridge National Laboratory and was a professor at the University of New Mexico for 25 years.",
         "attachments": {
           "pdf": "",
-          "youtube": ""
+          "youtube": "https://www.youtube.com/watch?v=JO8qSf2wVXE"
         }
       },
       {
