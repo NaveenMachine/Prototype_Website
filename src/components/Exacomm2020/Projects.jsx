@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
 
 // ✅ Load all images from folder
-const images = import.meta.glob('../../assets/img/ExaComm2023/*.{avif,png,jpg,jpeg,svg}', { eager: true });
+const images = import.meta.glob('../../assets/img/ExaComm2020/*.{avif,png,jpg,jpeg,svg}', { eager: true });
 
 const Projects = () => {
   // ✅ Convert the imported object into an array of image paths
