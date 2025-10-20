@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import NavBar from './components/NavBar.jsx';
 import Banner from './components/Banner.jsx';
 import About from './components/CallForPapers.jsx';
