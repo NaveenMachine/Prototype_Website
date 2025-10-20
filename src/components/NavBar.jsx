@@ -10,28 +10,28 @@ import {
   Button,
   Menu,
   MenuItem,
-  Drawer,
-  IconButton,
-  List,
-  ListItemButton,
-  ListItemText,
 } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
 import { Link as RouterLink } from 'react-router-dom';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+import DrawerComp from './Drawer.jsx'; // ✅ Make sure the path is correct
 
 export default function NavBar({ links }) {
   const theme = useTheme();
   const isMatch = useMediaQuery(theme.breakpoints.down('md'));
   const [value, setValue] = useState();
-  const [anchorEl, setAnchorEl] = useState(null);
-  const [drawerOpen, setDrawerOpen] = useState(false);
 
+  // --- Dropdown state for "Past Events" ---
+  const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
 
-  const handleMenuOpen = (event) => setAnchorEl(event.currentTarget);
-  const handleMenuClose = () => setAnchorEl(null);
+  const handleMenuOpen = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+  };
 
   return (
     <AppBar
@@ -40,8 +40,7 @@ export default function NavBar({ links }) {
           'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)',
       }}
     >
-      <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
-        {/* --- Left Side Logo --- */}
+      <Toolbar>
         <Button
           sx={{ background: 'transparent', color: 'white', width: '250px' }}
           component={RouterLink}
@@ -50,9 +49,12 @@ export default function NavBar({ links }) {
           <Typography>HARVEST-Vision 2026</Typography>
         </Button>
 
-        {/* --- Desktop Layout --- */}
-        {!isMatch ? (
-          <Box sx={{ display: 'flex', alignItems: 'center' }}>
+        {isMatch ? (
+          // ✅ Drawer on small screens
+          <DrawerComp links={links.map((l) => l.label)} />
+        ) : (
+          // ✅ Tabs on larger screens
+          <Box sx={{ width: '100%', display: 'flex', justifyContent: 'space-between' }}>
             <Tabs
               value={value}
               onChange={(e, val) => setValue(val)}
@@ -60,6 +62,7 @@ export default function NavBar({ links }) {
               textColor="inherit"
             >
               {links.map((link, index) => {
+                // Handle "Past Events" as a dropdown
                 if (link.label === 'Past Events') {
                   return (
                     <Tab
@@ -69,6 +72,8 @@ export default function NavBar({ links }) {
                     />
                   );
                 }
+
+                // Normal tabs
                 return (
                   <Tab
                     key={index}
@@ -80,30 +85,23 @@ export default function NavBar({ links }) {
               })}
             </Tabs>
 
+            {/* --- Dropdown Menu for Past Events --- */}
             <Menu
               anchorEl={anchorEl}
               open={open}
               onClose={handleMenuClose}
+              MenuListProps={{ onMouseLeave: handleMenuClose }}
               PaperProps={{
                 sx: { backgroundColor: 'rgba(255,255,255,0.95)', mt: 1 },
               }}
             >
-              {[
-                2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015,
-              ].map((year) => (
-                <MenuItem
-                  key={year}
-                  component={RouterLink}
-                  to={`/past-events/${year}`}
-                  onClick={handleMenuClose}
-                >
-                  ExaComm {year}
-                </MenuItem>
-              ))}
+              <MenuItem component={RouterLink} to="/past-events/2025" onClick={handleMenuClose}>
+                Harvest 2025
+              </MenuItem>
             </Menu>
 
             <Button
-              sx={{ ml: 3, background: 'rgba(2,0,36,1)' }}
+              sx={{ marginLeft: 5, background: 'rgba(2,0,36,1)' }}
               variant="contained"
               onClick={() =>
                 window.open(
@@ -115,49 +113,6 @@ export default function NavBar({ links }) {
               Apply
             </Button>
           </Box>
-        ) : (
-          /* --- Mobile Drawer Layout --- */
-          <>
-            <IconButton
-              sx={{ color: 'white' }}
-              onClick={() => setDrawerOpen(true)}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Drawer
-              anchor="right"
-              open={drawerOpen}
-              onClose={() => setDrawerOpen(false)}
-            >
-              <Box
-                sx={{ width: 250 }}
-                role="presentation"
-                onClick={() => setDrawerOpen(false)}
-              >
-                <List>
-                  {links.map((link, index) => (
-                    <ListItemButton
-                      key={index}
-                      component={RouterLink}
-                      to={link.path}
-                    >
-                      <ListItemText primary={link.label} />
-                    </ListItemButton>
-                  ))}
-                  <ListItemButton
-                    onClick={() =>
-                      window.open(
-                        'https://www.computer.org/csdl/proceedings/1000040',
-                        '_blank'
-                      )
-                    }
-                  >
-                    <ListItemText primary="Apply" />
-                  </ListItemButton>
-                </List>
-              </Box>
-            </Drawer>
-          </>
         )}
       </Toolbar>
     </AppBar>

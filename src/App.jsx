@@ -27,6 +27,7 @@ import Exacomm2021Page from './components/Exacomm2021/Page.jsx';
 import Exacomm2022Page from './components/Exacomm2022/Page.jsx';
 import Exacomm2023Page from './components/Exacomm2023/Page.jsx';
 import CallForPapers from './components/CallForPapers.jsx';
+import Harvest2025Page from './components/Harvest2025/Page.jsx';
 
 
 
@@ -52,10 +53,10 @@ function App() {
                 <Banner />
                 <section className="body">
                   <Container className="box">
+                    <SocialImpact />
                     <Organizers />
                     <Committee />
                     <Experience />
-                    <SocialImpact />
                   </Container>
                 </section>
                 <Contact />
@@ -102,15 +103,7 @@ function App() {
 
           {/* 📅 Dynamic Past Event pages (2024, 2023, etc.) */}
           {/* Year-specific ExaComm pages */}
-          <Route path="/past-events/2015" element={<Exacomm2015Page />} />
-          <Route path="/past-events/2016" element={<Exacomm2016Page />} />
-          <Route path="/past-events/2017" element={<Exacomm2017Page />} />
-          <Route path="/past-events/2018" element={<Exacomm2018Page />} />
-          <Route path="/past-events/2019" element={<Exacomm2019Page />} />
-          <Route path="/past-events/2020" element={<Exacomm2020Page />} />
-          <Route path="/past-events/2021" element={<Exacomm2021Page />} />
-          <Route path="/past-events/2022" element={<Exacomm2022Page />} />
-          <Route path="/past-events/2023" element={<Exacomm2023Page />} />
+          <Route path="/past-events/2025" element={<Harvest2025Page />} />
 
 
           {/* 🔁 Redirect all unknown paths to Home */}
