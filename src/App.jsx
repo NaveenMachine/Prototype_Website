@@ -2,13 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import NavBar from './components/NavBar.jsx';
 import Banner from './components/Banner.jsx';
-import About from './components/About.jsx';
+import About from './components/CallForPapers.jsx';
 import { Container } from 'react-bootstrap';
 import './assets/css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Skills from './components/Skills.jsx';
 import Experience from './components/Experience.jsx';
-import Projects from './components/Projects.jsx';
+import Projects from './components/Images.jsx';
 import Contact from './components/Apply.jsx';
 import Footer from './components/Footer.jsx';
 import Motivation from './components/Motivation.jsx';
@@ -27,6 +26,7 @@ import Exacomm2020Page from './components/Exacomm2020/Page.jsx';
 import Exacomm2021Page from './components/Exacomm2021/Page.jsx';
 import Exacomm2022Page from './components/Exacomm2022/Page.jsx';
 import Exacomm2023Page from './components/Exacomm2023/Page.jsx';
+import CallForPapers from './components/CallForPapers.jsx';
 
 
 
@@ -70,7 +70,7 @@ function App() {
             element={
               <section className="body">
                 <Container>
-                  <About />
+                  <CallForPapers />
                 </Container>
               </section>
             }
@@ -82,7 +82,7 @@ function App() {
             element={
               <section className="body">
                 <Container>
-                  <About />
+                  <CallForPapers />
                 </Container>
               </section>
             }

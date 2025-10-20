@@ -4,7 +4,7 @@ import '../assets/css/About.css';
 import data from '../assets/json/chunk-text.json';
 const images = import.meta.glob('../assets/img/lab/*.{png,jpg,jpeg,svg,avif}', { eager: true });
 
-const About = () => {
+const CallForPapers = () => {
   const about_text = data.about;
   const toRotate = Object.values(images).map(module => module.default);
 
@@ -66,4 +66,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default CallForPapers;

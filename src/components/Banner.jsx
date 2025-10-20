@@ -12,16 +12,16 @@ const Banner = () => {
         <section className="banner" id="home">
             <Container>
                 <Row className="align-items-center">
-                    <Col xs={12} md={6} xl={7} className="column">
+                    <Col xs={12} md={12} xl={12} className="column">
                         <h1>
-                            {`HARVEST-Vision: Second International Workshop on Applications of CV and HPC in Agriculture`}
+                            {`HARVEST 2026`}
                         </h1>
-                        <p>Workshop Date: 6 March 2026</p>
+                        <h2>
+                            {`HARVEST-Vision: Second International Workshop on Applications of CV and HPC in Agriculture`}
+                        </h2>
+                        <h3>March 6th, 2026 | The Catamaran Resort Hotel, San Diego, CA</h3>
+                        <p>In Cooperation with  <a href="https://icpp2025.sdsc.edu/home" target="_blank">The 54th International Conference on Parallel Processing (ICPP), 2025</a></p>
                         
-                        
-                    </Col>
-                    <Col xs={12} md={6} xl={5} className="img-col">
-                        <img src={headerImg} alt="header img" />
                     </Col>
                 </Row>
             </Container>

@@ -25,14 +25,15 @@
   }
 
   .banner a {
-    color: #fff;
+    color: #007bff; /* blue or any visible color */
     font-weight: 700;
-    font-size: 20px;
-    margin-top: 60px;
-    letter-spacing: 0.8px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+    font-size: 18px;
+    text-decoration: underline;
+    display: inline;
+    margin-top: 0;
+  }
+  .banner a:hover {
+    color: #0056b3;
   }
   
   .banner a svg {
