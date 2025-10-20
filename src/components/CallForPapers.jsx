@@ -55,7 +55,7 @@ const CallForPapers = () => {
             <button
               onClick={() => window.open("https://www.computer.org/csdl/proceedings/1000040", "_blank")}
 >
-              <span>Apply</span>
+              <span>Submit</span>
             </button>
 
         </Col>

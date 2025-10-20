@@ -110,7 +110,7 @@ export default function NavBar({ links }) {
                 )
               }
             >
-              Apply
+              Submit
             </Button>
           </Box>
         )}

@@ -79,7 +79,7 @@ export default function DrawerComp({ links }) {
                 }}
                 variant="contained"
               >
-                Apply
+                Submit
               </Button>
             </Box>
           </List>

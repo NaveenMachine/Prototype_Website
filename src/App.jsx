@@ -8,7 +8,7 @@ import './assets/css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Agenda from './components/Agenda.jsx';
 import Projects from './components/Images.jsx';
-import Contact from './components/Apply.jsx';
+import Contact from './components/Submit.jsx';
 import Footer from './components/Footer.jsx';
 import Motivation from './components/Motivation.jsx';
 import Organizers from './components/Organizers.jsx';
