@@ -2,6 +2,10 @@
 import React from "react";
 import Banner from "./Banner.jsx";
 import { Container } from "react-bootstrap";
+import About from "./About.jsx";
+import Keynotes from "./Keynotes.jsx";
+import Projects from "./Projects.jsx";
+import Footer from "../Footer.jsx";
 
 export default function Exacomm2016Page() {
   return (
@@ -9,10 +13,12 @@ export default function Exacomm2016Page() {
       <Banner />
       <section className="body">
         <Container>
-          <h2>ExaComm 2015 Highlights</h2>
-          <p>Include description, speakers, or gallery here.</p>
+          <About/>
+          <Keynotes/>
+          <Projects/>
         </Container>
       </section>
+      <Footer/>
     </>
   );
 }

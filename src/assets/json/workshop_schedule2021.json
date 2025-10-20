@@ -1,0 +1,82 @@
+{
+    "schedule": [
+      {
+        "time": "8:00 - 9:00 AM",
+        "title": "Keynote: Fugaku and its Advanced Network Features for Disaggregation",
+        "speaker": "Satoshi Matsuoka, RIKEN Center for Computational Science, Japan",
+        "abstract": "Fugaku is currently the fastest supercomputer in the world, where its technical innovations are not only in the CPU but also in its interconnect. Fugaku incorporates the Tofu-D network interface and associated DMAC, as well as a 10-port switch comprising a 6D Torus network. The network interface is directly connected to the intra-chip interconnect ring that connects to memory and L2 cache, allowing any memory in the system to be directly accessed via RDMA and injected into the L2 cache. This enables sub-microsecond MPI communication and efficient distributed shared memory features comparable to hardware NUMA machines.",
+        "bio": "Satoshi Matsuoka is the Director of RIKEN Center for Computational Science (R-CCS), leading the development and operation of Japan’s ‘Fugaku’ supercomputer, which achieved #1 rankings across all major supercomputing benchmarks. He was previously a Full Professor at Tokyo Institute of Technology and led the TSUBAME series of supercomputers. He has published over 500 papers, chaired numerous ACM/IEEE conferences, and received prestigious awards including the ACM Gordon Bell Prize, IEEE-CS Sidney Fernbach Award, and Japan’s Medal of Honor with Purple Ribbon.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "9:00 - 9:30 AM",
+        "title": "Cloud Native Supercomputing",
+        "speaker": "Gilad Shainer, NVIDIA/Mellanox",
+        "abstract": "High performance computing and Artificial Intelligence are essential tools driving scientific advancement. To meet growing computational demands and complexity, cloud native supercomputing aims to merge bare-metal performance with cloud services. This session reviews the architecture and evolution of cloud native supercomputing and its role in unifying HPC and cloud infrastructures.",
+        "bio": "Gilad Shainer serves as Senior Vice President of Marketing for Mellanox Networking at NVIDIA, focusing on HPC, AI, and InfiniBand technologies. Since joining Mellanox in 2001, he has held multiple leadership roles and currently chairs the HPC-AI Advisory Council. He holds multiple patents and R&D100 awards for innovations in networking and holds MSc and BSc degrees in Electrical Engineering from the Technion Institute of Technology in Israel.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "9:30 - 10:00 AM",
+        "title": "Slingshot Network and its Use in Exascale Systems",
+        "speaker": "Duncan Roweth, HPE",
+        "abstract": "This talk provides an overview of the Slingshot Ethernet network fabric developed by Cray and used by HPE in US exascale systems. It focuses on scalability, topology design, load performance, and low-latency network collectives — key features for efficient exascale operation.",
+        "bio": "Duncan Roweth is a Distinguished Technologist in HPE’s HPC and Mission Critical Business Unit CTO Office. Previously at Cray, he contributed to three generations of HPC network development and led the Slingshot program since its inception. He holds a Ph.D. from the University of Edinburgh and continues designing next-generation Slingshot architectures.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "10:00 - 10:30 AM",
+        "title": "Cornelis Networks Omni-Path: Purpose Built High-Performance Fabrics for HPC/HPDA/AI",
+        "speaker": "Phil Murphy, Cornelis Networks",
+        "abstract": "As HPC, HPDA, and AI converge on unified compute clusters, network fabric design must address low latency, high message rates, and scalable bandwidth. This talk discusses trade-offs in fabric architecture to achieve these goals and how Cornelis Networks leverages OpenFabrics Interfaces to enhance performance across modern workloads.",
+        "bio": "Phil Murphy is CEO of Cornelis Networks and was formerly a Director at Intel responsible for fabric platform planning and architecture. He co-founded SilverStorm Technologies and held VP positions at QLogic. Phil holds a BS in Mathematics from St. Joseph’s University and an MS in Computer and Information Science from the University of Pennsylvania.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "10:30 - 11:00 AM",
+        "title": "RoCEv2 Congestion Control Enhancements for Large Scale HPC and ML Deployments",
+        "speakers": "Hemal Shah and Moshe Voloshin, Broadcom",
+        "abstract": "RoCEv2 with ECN-based congestion control can scale efficiently without requiring Priority-based Flow Control (PFC), which can cause head-of-line blocking. This session covers ECN thresholds, switch buffer tuning, and hardware-based congestion control enhancements that enable large-scale HPC and ML deployments over Ethernet.",
+        "bio": "Hemal Shah is a Distinguished Engineer at Broadcom, leading Ethernet NIC system and software architecture in the Data Center Solutions Group. He has defined RDMA hardware/software solutions for over two decades and holds 40+ patents. Moshe Voloshin is a Systems Architect at Broadcom, responsible for defining RoCE and congestion control architectures in Ethernet NICs, with previous experience at Cisco developing ASICs for high-end routers.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "11:00 - 11:30 AM",
+        "title": "Upcoming Ultra-Low Latency Direct Interconnect Switchless RoCE Adapter and Associated Programming Models from Rockport Networks for HPC",
+        "speaker": "Matthew Williams, Rockport Networks",
+        "abstract": "Network congestion severely impacts HPC workloads. Rockport Networks has developed an ultra-low latency, switchless interconnect that ensures predictable performance even under high load. This talk covers the distributed architecture, MVAPICH integration with OSU, and benchmark results demonstrating Rockport’s performance advantages.",
+        "bio": "Matthew Williams is CTO of Rockport Networks with 25 years of engineering leadership experience and 21 US patents. He has served as CTO of multiple network technology companies and specializes in product vision and architecture for high-performance computing interconnects. Matthew holds a B.Sc. in Electrical Engineering from Queen’s University, Kingston, Canada.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "11:30 AM - 12:00 PM",
+        "title": "Architecting AI Services for Media Industry Using Oracle HPC Cloud",
+        "speaker": "Sanjay Basu, Oracle",
+        "abstract": "This presentation explores architectural patterns and trade-offs in building AI service platforms for video transcoding, classification, and transcription. It includes network, compute, and storage design choices for Oracle Cloud HPC, GPU and CPU benchmarking, optimization strategies, and event-driven architecture for scalable AI/ML workloads.",
+        "bio": "Sanjay Basu is Director of Cloud Engineering at Oracle, focusing on Machine Learning on HPC/GPU platforms. With 28 years of IT experience, he previously led Dell’s first private cloud and served as CTO for EMC Managed Cloud Services. Sanjay holds advanced certificates from Harvard and MIT, an MBA from Boston University, and is an adjunct professor at Divergence Academy. He holds five patents and is a senior member of IEEE and ACM.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      }
+    ]
+  }
+  

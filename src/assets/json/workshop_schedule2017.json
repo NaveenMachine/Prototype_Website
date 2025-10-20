@@ -1,0 +1,161 @@
+{
+   "schedule": [
+      {
+        "time": "8:50 - 9:00",
+        "title": "Opening Remarks",
+        "speakers": "Hari Subramoni and Dhabaleswar K (DK) Panda, The Ohio State University"
+      },
+      {
+        "time": "9:00 - 10:00",
+        "title": "Keynote: Exploring Emerging Memory Technologies in Extreme Scale High Performance Computing",
+        "speaker": "Jeffrey S. Vetter, Distinguished R&D Staff Member, Oak Ridge National Laboratory",
+        "abstract": "Concerns about energy efficiency and cost are forcing the HPC community to reexamine memory and storage architectures. Emerging technologies like non-volatile memory (NVM), deep hierarchies, and near-memory processing are reshaping system design. This talk reviews their impact on software and introduces Papyrus, a system that aggregates NVM across nodes for scalable, performance-portable data structures.",
+        "bio": "Jeffrey S. Vetter, Ph.D., is a Distinguished R&D Staff Member at Oak Ridge National Laboratory and the founding group leader of the Future Technologies Group. He also holds joint appointments at Georgia Tech and the University of Tennessee. A recipient of the ACM Gordon Bell Prize, Dr. Vetter has authored award-winning research and books on contemporary HPC architecture. He served as SC15 Technical Program Chair and is a Senior Member of IEEE and ACM.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "10:00 - 10:30",
+        "title": "Scaling with Dense Nodes",
+        "speaker": "Chris J. Newburn (CJ), Principal HPC Architect, NVIDIA",
+        "abstract": "Modern power-efficient HPC systems rely on dense nodes with multiple GPUs and CPUs interconnected via high-speed links. This session explores architectural strategies, programming models, and frameworks like HiHAT for scaling applications on such nodes. It also demonstrates performance benefits achieved through mixed MPI/SHMEM usage and GPU Direct communication.",
+        "bio": "Chris J. Newburn (CJ) is the Principal HPC Architect at NVIDIA, specializing in scalable programming models for heterogeneous systems. With over 80 patents, he has contributed extensively to hardware and compiler research. CJ earned his Ph.D. at Carnegie Mellon University and has worked on both startup innovations and high-performance architectures.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "10:30 - 11:00",
+        "title": "Current and Future Challenges of the Tofu Interconnect for Emerging Applications",
+        "speaker": "Yuichirou Ajima, Senior Architect, Fujitsu, Japan",
+        "abstract": "Emerging applications such as big data analytics and neural network training demand scalable interconnects. This talk discusses current and future challenges for the Tofu interconnect, Fujitsu’s high-performance network used in systems like the K computer, including efforts to support deep learning processors and diverse post-Moore architectures.",
+        "bio": "Yuichirou Ajima is a Senior Architect at Fujitsu and a key developer of the Tofu interconnect series used in Japan’s leading supercomputers. He received the Ichimura Prize and the Imperial Invention Prize for his contributions and holds a Ph.D. in Information Engineering from the University of Tokyo.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "11:00 - 11:30",
+        "title": "Break"
+      },
+      {
+        "time": "11:30 - 12:00",
+        "title": "HPE’s Vision for Exascale: Open and Balanced",
+        "speaker": "Nicolas Dubé, Chief Strategist for HPC, Hewlett Packard Enterprise",
+        "abstract": "HPE’s exascale vision emphasizes architectural balance and openness, prioritizing communication and memory efficiency over raw FLOPS. The design leverages Gen-Z fabric, Hyper-X topology, and NVM-based global storage to enable modular, scalable, and energy-efficient systems for the 2020s and beyond.",
+        "bio": "Dr. Nicolas Dubé is the Chief Strategist for High-Performance Computing at HPE and Chief Architect for Exascale initiatives. He leads HPE’s Advanced Development Team and has received R&D Awards for innovation in sustainable supercomputing. He advocates for greener HPC and carbon-neutral architectures.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "12:00 - 12:30",
+        "title": "Interconnection and I/O System on Oakforest-PACS: World’s Largest KNL+OPA Cluster",
+        "speaker": "Taisuke Boku, Professor, University of Tsukuba, Japan",
+        "abstract": "Oakforest-PACS, operated by JCAHPC, integrates Intel Knights Landing CPUs and Omni-Path interconnects, achieving 25 PFLOPS peak performance. This session details its architecture, benchmarks, and system-level insights into computation, communication, and I/O optimization in large-scale many-core clusters.",
+        "bio": "Dr. Taisuke Boku is Deputy Director of the Center for Computational Sciences at the University of Tsukuba and system manager for Japan’s Oakforest-PACS supercomputer. A co-author of the 2011 ACM Gordon Bell Prize, he specializes in HPC architecture and performance evaluation.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "12:30 - 1:00",
+        "title": "HPC Network Stack on ARM",
+        "speaker": "Pavel Shamis, Principal Research Engineer, ARM",
+        "abstract": "This talk examines how ARM-based architectures integrate with RDMA network hardware for high-performance computing. It discusses the enablement of MPI, OpenSHMEM, and UCX stacks on ARM systems and shares early performance evaluations of one-sided communication libraries for next-generation HPC clusters.",
+        "bio": "Pavel Shamis is a Principal Research Engineer at ARM focusing on co-design for high-performance interconnects and communication middleware. Formerly at ORNL and Mellanox Technologies, he is a recipient of the R&D100 award for his work on CORE-Direct collective offload technology and contributes to multiple open-source HPC frameworks.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "1:00 - 2:00",
+        "title": "Lunch"
+      },
+      {
+        "time": "2:00 - 2:30",
+        "title": "Next Generation of Co-Processors Emerges – In-Network Computing",
+        "speaker": "Gilad Shainer, Vice President of Marketing, Mellanox Technologies",
+        "abstract": "This session explores co-design architectures in which intelligent interconnects serve as co-processors for Exascale systems. By offloading computation to the network, In-Network Computing improves performance and efficiency for data-driven workloads, marking a shift toward integrated, distributed processing architectures.",
+        "bio": "Gilad Shainer is Vice President of Marketing at Mellanox Technologies and Chairman of the HPC Advisory Council. He holds multiple patents in high-speed networking and has received the R&D100 award for his contributions to CORE-Direct technology. Shainer earned his MSc and BSc in Electrical Engineering from the Technion, Israel.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "2:30 - 3:00",
+        "title": "Communication and Networking for HPC and Beyond",
+        "speaker": "Klaus Gottschalk, HPC and Machine-Learning Architect, IBM",
+        "abstract": "This talk discusses advances in communication between CPUs, GPUs, and accelerators for high-performance and AI workloads. Technologies like NVIDIA’s NVLink and the OpenCAPI standard are redefining parallel architectures by reducing latency and improving interconnect bandwidth for emerging computational models.",
+        "bio": "Klaus Gottschalk is an HPC and machine learning architect at IBM with expertise in parallel systems and AI workloads. Since joining IBM in 1992, he has worked extensively on system sizing, architecture, and performance optimization for HPC and ML infrastructures.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "3:00 - 4:00",
+        "title": "Research Paper Session",
+        "chair": "Hari Subramoni, The Ohio State University",
+        "papers": [
+          {
+            "title": "Design Space Exploration of the Dragonfly Topology",
+            "authors": "Min Yee Teh, Jeremiah J. Wilke, Keren Bergman, and Sébastien Rumley — Columbia University and Sandia National Laboratories",
+            "abstract": "This paper introduces an algorithmic framework for designing Dragonfly network topologies, balancing group distribution and interconnect density. It identifies optimal configurations for performance and cost trade-offs and provides guidelines for scalable topology design in exascale systems."
+          },
+          {
+            "title": "High-Throughput Sockets over RDMA for the Intel Xeon Phi Coprocessor",
+            "authors": "Aram Santogidis, Maynooth University and CERN; Spyros Lalis, University of Thessaly, Greece",
+            "abstract": "Trans4SCIF, a socket-like transport library using RDMA over Intel Xeon Phi’s SCIF interface, is introduced. Integrated with ZeroMQ, it achieves up to 3x throughput improvement over TCP/IP, enabling high-throughput data movement for CERN applications."
+          }
+        ],
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "4:00 - 4:30",
+        "title": "Break"
+      },
+      {
+        "time": "4:30 - 5:00",
+        "title": "How Co-Designs and High-Level Predictions May Help Match New Technology Trends",
+        "speaker": "Philippe Thierry, Principal Engineer, Intel Corporation",
+        "abstract": "This talk discusses how high-level modeling and co-design techniques can bridge physics-based simulation data and real-world application behavior to guide future HPC architecture design, addressing bandwidth, latency, and scalability constraints in next-generation systems.",
+        "bio": "Philippe Thierry is a Principal Engineer at Intel, specializing in application characterization and performance modeling. He holds a Ph.D. in Geophysics from the Paris School of Mines and previously led Intel’s Energy Engineering Team. His work focuses on uncertainty quantification and HPC optimization.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "5:00 - 6:00",
+        "title": "Panel: Do We Need New Architectural and Communication Support for Deep Learning and Big Data?",
+        "moderator": "Nectarios Koziris, Dean, School of Electrical and Computer Engineering, National Technical University of Athens, Greece",
+        "panelists": [
+          "Ron Brightwell, R&D Manager, Scalable System Software, Sandia National Laboratories",
+          "Ada Gavrilovska, Associate Professor, Georgia Tech",
+          "Mitch Gusat, Researcher, IBM Zurich",
+          "Richard Graham, Senior Solutions Architect, Mellanox Technologies"
+        ],
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "6:00 - 6:10",
+        "title": "Closing Remarks"
+      }
+    ]
+  }
+  

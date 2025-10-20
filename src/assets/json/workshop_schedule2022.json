@@ -1,0 +1,176 @@
+{
+    "schedule": [
+      {
+        "time": "9:00 - 9:05 AM",
+        "title": "Opening Remarks",
+        "speakers": "Hari Subramoni, Aamir Shafi, and Dhabaleswar K (DK) Panda, The Ohio State University"
+      },
+      {
+        "time": "9:05 - 10:00 AM",
+        "title": "Keynote: Frontier’s Exascale Architecture",
+        "speaker": "Scott Atchley, Oak Ridge National Laboratory",
+        "chair": "Dhabaleswar K (DK) Panda, The Ohio State University",
+        "abstract": "The Oak Ridge Leadership Computing facility has deployed several TOP500 number one systems including Jaguar, Titan, and Summit. OLCF is currently deploying Frontier, America’s first exascale supercomputer. This talk will examine the evolution of OLCF system designs and their impacts on the communication architecture and programming models. This evolution includes the addition of GPUs, the deployment of various interconnect topologies, and the adoption of new communication interfaces.",
+        "bio": "Scott Atchley is a Distinguished Scientist with the Oak Ridge National Laboratory’s National Center for Computational Science. He is the Systems Architecture team lead within the Technology Integration Group in the Advanced Technologies Section. Scott and his team focus on understanding technology trends and application needs in order to guide system procurements. Scott has been heavily involved in DOE’s Exascale Computing Initiative and Project, serving as DOE Technical Representative for AMD’s FastForward-2 Node architecture program and AMD’s PathForward program.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "10:00 - 10:30 AM",
+        "title": "InfiniBand In-Network Computing: Accelerating HPC and Cloud Applications",
+        "speaker": "Gilad Shainer, Mellanox/NVIDIA",
+        "chair": "Taisuke Boku, University of Tsukuba, Japan",
+        "abstract": "The high-performance InfiniBand network provides computing services via in-network computing acceleration engines, such as data aggregation and reduction, MPI Tag Matching, MPI All-to-All, and more. Offloading these data algorithms to the network decreases the amount of data traversing the network, dramatically reduces communication time, enables compute and communication overlap, and increases datacenter efficiency.",
+        "bio": "Gilad Shainer serves as senior vice-president of networking at NVIDIA. Mr. Shainer serves as chairman of the HPC-AI Advisory Council organization, president of UCF and CCIX consortiums, and member of IBTA and PCISIG. He holds multiple patents in high-speed networking and has received R&D100 awards for contributions to CORE-Direct In-Network Computing and UCX technologies.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "10:30 - 11:00 AM",
+        "title": "The Network Inside vs. Outside Your Servers",
+        "speaker": "Rob Sherwood, Intel",
+        "chair": "Dhabaleswar K (DK) Panda, The Ohio State University",
+        "abstract": "Historically, the network outside of servers was designed completely different than the network inside. With modern workloads like HPC and AI training, these two design points are converging. We now need predictable performance both inside and outside servers. This talk discusses this trend, its causes, and future technologies including SDN-style centralized control and optical I/O systems.",
+        "bio": "Rob Sherwood is the CTO of the Connectivity Group at Intel, leading IPDK open-source efforts and data center pathfinding. He previously led Facebook’s network reliability and FBOSS, was CTO of Big Switch Networks, and worked with Deutsche Telekom on SDN and OpenFlow. Rob holds a Ph.D. in Computer Science from the University of Maryland.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "11:00 - 11:30 AM",
+        "title": "Morning Coffee Break"
+      },
+      {
+        "time": "11:30 - 12:00 PM",
+        "title": "Tofu Interconnect D of Supercomputer Fugaku and Future Prospects",
+        "speaker": "Yuuichirou Ajima, Fujitsu, Japan",
+        "chair": "Hari Subramoni, The Ohio State University",
+        "abstract": "This presentation will describe how Tofu Interconnect D supports the massively parallel architecture of the supercomputer Fugaku and discuss future system interconnects in Japan’s NGACI community. The talk highlights bandwidth considerations, power efficiency, and architecture comparisons to global systems like Summit.",
+        "bio": "Dr. Yuichiro Ajima is Principal Architect at Fujitsu, responsible for the Tofu interconnect series used in K computer, Fugaku, and PRIMEHPC systems. He holds a Ph.D. from the University of Tokyo and has received multiple national awards including the Medal of Honor with Purple Ribbon.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "12:00 - 12:30 PM",
+        "title": "Unleashing System Performance at Scale via Cornelis Networks Omni-Path",
+        "speaker": "Phil Murphy, Cornelis Networks",
+        "chair": "Hari Subramoni, The Ohio State University",
+        "abstract": "The evolution of node hardware and software architectures to meet rising workload challenges is putting unprecedented demands on interconnects. This talk covers how Omni-Path enables scalable performance for AI, HPDA, and HPC workloads through efficient OpenFabrics Interfaces and interconnect infrastructure.",
+        "bio": "Phil Murphy is CEO of Cornelis Networks and was formerly a director at Intel responsible for fabric architecture and business development. He co-founded SilverStorm Technologies and has held leadership roles in QLogic’s HPC division. Phil holds an MS in Computer and Information Science from the University of Pennsylvania.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "12:30 - 1:00 PM",
+        "title": "AWS’s Elastic Fabric Adapter – A Peculiar Approach to Solving for Application Scalability in HPC and Machine Learning",
+        "speaker": "Brendan Bouffler, AWS",
+        "chair": "Hari Subramoni, The Ohio State University",
+        "abstract": "EFA is Amazon’s unique solution for HPC scalability challenges in massive, continuously evolving data centers. This session explores the evolution, design philosophy, and ongoing developments of AWS’s Elastic Fabric Adapter for high-performance and machine learning workloads.",
+        "bio": "Brendan Bouffler has over 25 years of experience building HPC systems worldwide. He leads HPC strategy at AWS, previously managed HPC across Asia, and holds a degree in Physics. He’s based in London and is a frequent speaker on large-scale cloud HPC.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "1:00 - 2:00 PM",
+        "title": "Lunch Break"
+      },
+      {
+        "time": "2:00 - 2:30 PM",
+        "title": "Ultrascale System Interconnects at the End of Moore’s Law",
+        "speaker": "John Shalf, Lawrence Berkeley National Laboratory",
+        "chair": "Aamir Shafi, The Ohio State University",
+        "abstract": "The end of Moore’s Law changes the requirements for interconnect architectures in HPC and data centers. This talk discusses the shift toward architectural specialization, photonics integration, and system-level metrics like bandwidth density and performance consistency for next-generation interconnects.",
+        "bio": "John Shalf is Department Head for Computer Science at Lawrence Berkeley National Laboratory and was Deputy Director of Hardware Technology for the DOE Exascale Computing Project. He coauthored the landmark report 'The Landscape of Parallel Computing Research' and numerous publications shaping modern HPC research.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "2:30 - 3:00 PM",
+        "title": "How HPC Followed the Unlikely Path to Ethernet",
+        "speaker": "Keith Underwood, HPE",
+        "chair": "Aamir Shafi, The Ohio State University",
+        "abstract": "Once considered unsuitable for HPC, Ethernet has now become foundational to leadership-class systems like HPE’s Slingshot. This talk covers the evolution of Ethernet in HPC, architectural changes enabling its adoption, and lessons from real deployments.",
+        "bio": "Keith Underwood is a Distinguished Technologist at HPE leading NIC architecture definition for the Slingshot interconnect. He previously led Omni-Path 2 architecture at Intel and co-authored the Portals 4 API and MPI-3 RMA extensions.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "3:00 - 3:30 PM",
+        "title": "Broadcom NIC Technologies for Large-Scale HPC and AI/ML Systems",
+        "speaker": "Hemal Shah, Broadcom",
+        "chair": "Aamir Shafi, The Ohio State University",
+        "abstract": "With Ethernet exceeding 100 Gbps and high-performance RoCE implementations, Broadcom NICs are addressing the needs of HPC, AI, and ML workloads through RDMA offloads and congestion control. This talk provides an overview of Broadcom’s NIC architecture and roadmap.",
+        "bio": "Dr. Hemal Shah is Distinguished Engineer at Broadcom’s Data Center Solutions Group, leading NIC architecture and RDMA offload strategy. He has co-authored 70+ DMTF specifications, four IETF RFCs, and holds 40+ patents. Hemal earned his Ph.D. in Computer Engineering from Purdue University.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "3:30 - 4:00 PM",
+        "title": "Making a Case for Data Accelerators at LANL",
+        "speaker": "Steve Poole, Los Alamos National Laboratory",
+        "chair": "Aamir Shafi, The Ohio State University",
+        "abstract": "LANL is exploring the distribution of application components across CSDs and DPUs to offload relevant computation tasks. This talk discusses LANL’s tailoring philosophy and future system evaluation process for optimizing computational efficiency.",
+        "bio": "Steve Poole is a Senior Scientist at Los Alamos National Laboratory working on advanced architectures, application tailoring, and co-design. He co-founded the UCF Consortium and has contributed to OpenSHMEM, OpenUCX, and OpenHPCA initiatives.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "4:00 - 4:30 PM",
+        "title": "Afternoon Coffee Break"
+      },
+      {
+        "time": "4:30 - 5:00 PM",
+        "title": "Rockport Networking Solutions for Large-Scale HPC and AI Systems",
+        "speaker": "Matthew Williams, Rockport Networks",
+        "chair": "Dhabaleswar K (DK) Panda, The Ohio State University",
+        "abstract": "The Rockport Switchless Network provides a distributed, high-performance interconnect modeled after the world’s fastest supercomputers. This talk covers the architecture, scalability, and performance benchmarks compared to traditional switched networks.",
+        "bio": "Matt Williams is CTO of Rockport Networks with 25 years of experience across five generations of network architectures. He has held senior technical roles at high-growth networking companies and is an active HPC community speaker. Matt holds a B.Sc. in Electrical Engineering from Queen’s University.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "5:00 - 6:00 PM",
+        "title": "Panel: Shaping the Future of Distributed Computing – Bottom Up or Top Down",
+        "moderator": "Arthur Maccabe, Institute for the Future of Data and Computing, University of Arizona",
+        "summary": "This panel explores the evolution of distributed computing architectures — comparing bottom-up systems built from autonomous nodes with top-down 'Super Facility' designs extending exascale systems to the edge. Panelists will discuss economic, technological, and software infrastructure factors shaping the field.",
+        "panelists": [
+          "Sadaf Alam, Swiss National Supercomputing Centre, Switzerland",
+          "Debbie Bard, LBNL",
+          "Norbert Eicker, Jülich Supercomputing Centre, Germany",
+          "Rich Graham, NVIDIA/Mellanox"
+        ],
+        "bio": "Arthur B. (Barney) Maccabe is Executive Director of the Institute for the Future of Data and Computing at the University of Arizona. He previously directed the Computer Science and Mathematics Division at Oak Ridge National Laboratory and was a professor at the University of New Mexico for 25 years.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "6:00 - 6:05 PM",
+        "title": "Closing Remarks",
+        "speakers": "Hari Subramoni, Aamir Shafi, and Dhabaleswar K (DK) Panda, The Ohio State University"
+      }
+    ]
+  }
+  

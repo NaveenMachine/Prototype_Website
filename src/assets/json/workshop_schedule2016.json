@@ -1,0 +1,152 @@
+{
+    "schedule": [
+      {
+        "time": "8:50 - 9:00",
+        "title": "Opening Remarks",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "9:00 - 10:00",
+        "title": "Keynote: Optimizing Network Usage on Sequoia and Sierra",
+        "speaker": "Bronis R. de Supinski, CTO, Livermore Computing (LC), Lawrence Livermore National Laboratory (LLNL)",
+        "abstract": "Lawrence Livermore National Laboratory (LLNL) has a long history of leadership in large-scale computing. Sequoia, a 96-rack BlueGene/Q system, is currently ranked number three on the Top 500 list. Sierra, its successor, is a heterogeneous platform delivered through collaboration among IBM, NVIDIA, and Mellanox. This talk explores network optimizations on these systems, focusing on communication software and architectural co-designs enabling efficient performance.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "10:00 - 10:30",
+        "title": "Toward Extreme Scale: Requirements for Next-Generation Fabrics",
+        "speaker": "William (Bill) Magro, Intel Fellow & Chief Technologist, HPC Software, Intel",
+        "abstract": "Achieving exascale performance requires messaging fabrics that meet stringent requirements: high bandwidth, message rate, and low latency with minimal jitter and software overhead. This session discusses Intel’s perspective on next-generation fabric architectures, focusing on congestion management and scalability with Intel OmniPath Architecture.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "10:30 - 11:00",
+        "title": "Topology-Awareness in the Tofu Interconnect Series",
+        "speaker": "Yuichirou Ajima, Senior Architect, Fujitsu, Japan",
+        "abstract": "Topology-aware communication is essential for scalable performance in decentralized direct networks. This talk introduces the topology-awareness features of the Tofu and Tofu2 interconnects and their software stacks, enabling efficient scheduling and communication optimizations for large-scale systems.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "11:00 - 11:30",
+        "title": "Coffee Break"
+      },
+      {
+        "time": "11:30 - 12:00",
+        "title": "Technologies for Improved Scaling on GPU Clusters",
+        "speaker": "Jiri Kraus, Senior Developer, NVIDIA",
+        "abstract": "Scalable GPU applications require minimizing communication overheads and maximizing bandwidth. This session covers NVIDIA’s GPUDirect technologies, including GPUDirect Async, and benchmarks demonstrating improved inter-GPU bandwidth and reduced latency through NVLink and Tesla P100 innovations.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "12:00 - 12:30",
+        "title": "BXI – The New Scalable Interconnect for HPC",
+        "speaker": "Jean-Pierre Panziera, Chief Technology Director for Extreme Computing, Bull Atos Technologies",
+        "abstract": "BXI (Bull eXascale Interconnect) is Atos’ new interconnection network optimized for large-scale HPC workloads. Based on the Portals 4 protocol, BXI enables hardware offload of communication primitives for independent computation and communication progress. The session discusses its management stack, resilience features, and live re-routing capabilities for uninterrupted high-performance service.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "12:30 - 1:00",
+        "title": "About Management of Exascale Systems",
+        "speaker": "Tor Skeie, Professor and Adjunct Research Scientist, Simula Research Laboratory, Norway",
+        "abstract": "This presentation discusses management challenges in exascale systems, including scalable InfiniBand configurations, topology-aware reconfiguration, and reliability maintenance under changing traffic patterns. It introduces research on scalable SA approaches, SlimUpdate, and hierarchical reconfiguration, with perspectives on self-adaptive management and HPC-cloud convergence.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "1:00 - 2:00",
+        "title": "Lunch Break"
+      },
+      {
+        "time": "2:00 - 2:30",
+        "title": "Exascale by Co-Design Architecture",
+        "speaker": "Michael Kagan, CTO, Mellanox Technologies",
+        "abstract": "As high-performance computing advances toward exascale, scalability challenges span hardware, middleware, and applications. This session highlights the Co-Design approach, in which software and hardware evolve collaboratively to optimize efficiency and overcome scalability bottlenecks across the full HPC stack.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "2:30 - 3:00",
+        "title": "Next Generation Interconnection for Accelerated Computing",
+        "speaker": "Taisuke Boku, Professor, University of Tsukuba, Japan",
+        "abstract": "Future accelerator-based systems will require tighter integration between compute devices and communication channels. This talk presents FPGA-enabled co-design solutions for direct accelerator interconnection, aiming to close the performance gap and enhance communication throughput for next-generation HPC architectures.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "3:00 - 4:00",
+        "title": "Research Paper Session",
+        "chair": "Dr. Khaled Hamidouche, The Ohio State University",
+        "papers": [
+          {
+            "title": "SONAR: Automated Communication Characterization for HPC Applications",
+            "authors": "Steffen Lammel, Felix Zahn, and Holger Froning, University of Heidelberg, Germany",
+            "attachments": {
+              "pdf": "",
+              "youtube": ""
+            }
+          },
+          {
+            "title": "Reducing the Overhead of Manipulating Data Structures on PGAS by Ordering Memory Access at the Remote Side",
+            "authors": "Yuichirou Ajima, Takafumi Nose, Kazushige Saga, Naoyuki Shida, and Shinji Sumimoto, Fujitsu Limited, Japan",
+            "attachments": {
+              "pdf": "",
+              "youtube": ""
+            }
+          }
+        ]
+      },
+      {
+        "time": "4:00 - 4:30",
+        "title": "Coffee Break"
+      },
+      {
+        "time": "4:30 - 6:00",
+        "title": "Panel: Beyond Speeds and Feeds – What New Capabilities Are Needed for Exascale Interconnects?",
+        "moderator": "Ron Brightwell, Sandia National Laboratories",
+        "panelists": [
+          "Jeff Hammond, Research Scientist, Intel Corporation",
+          "Daniel Holmes, Applications Consultant in HPC Research, EPCC, United Kingdom",
+          "Laxmikant V. (Sanjay) Kale, Professor, University of Illinois at Urbana-Champaign",
+          "Jay Lofstead, Senior Member of Technical Staff, Sandia National Laboratories",
+          "Tor Skeie, Professor and Adjunct Research Scientist, Simula Research Laboratory, Norway"
+        ],
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "6:00 - 6:10",
+        "title": "Closing Remarks",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      }
+    ]
+  }
+  

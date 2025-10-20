@@ -1,0 +1,128 @@
+{
+    "timezone": "All times in Central European Summer Time (CEST)",
+    "schedule": [
+      {
+        "time": "9:00 - 9:15",
+        "title": "Opening Remarks",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "9:15 - 10:15",
+        "title": "Keynote: Exascale Computing Architecture Trends and Implications for Programming Systems",
+        "speaker": "John M. Shalf, CTO, National Energy Research Scientific Computing Center and Department Head for Computer Science and Data Sciences at Lawrence Berkeley National Laboratory (LBNL)",
+        "abstract": "For the past twenty-five years, the bulk-synchronous MPI model has provided a sufficient basis for parallel programming. However, since 2004, shifts in technology have dramatically changed architectural assumptions, altering what resources must be optimized to achieve performance. This talk explores how these changes impact programming models and highlights durable abstractions that align with evolving hardware and energy-efficiency trends, ensuring code longevity through future technological transitions.",
+        "attachments": {
+          "pdf": "",
+          "youtube": "",
+          "slides": ["", ""]
+        }
+      },
+      {
+        "time": "10:15 - 11:00",
+        "title": "Invited Talk 1: Paving the Road to Exascale",
+        "speaker": "Dror Goldenberg, Vice President - Architecture, Mellanox Technologies",
+        "abstract": "The exponential growth in data and scientific demands requires interconnects capable of connecting tens of thousands of heterogeneous compute nodes with high throughput and low latency. This talk examines the role of interconnects in enabling large-scale simulations, exploring offload technologies, 100Gb/s architectures, and new topology designs that enhance scalability and efficiency for exascale workloads.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "11:00 - 11:30",
+        "title": "Coffee Break"
+      },
+      {
+        "time": "11:30 - 12:15",
+        "title": "Invited Talk 2: Introspection for Exascale Communication: Needs, Opportunities, Tools and Interfaces",
+        "speaker": "Martin Schulz, Computer Scientist, Lawrence Livermore National Laboratory",
+        "abstract": "The increasing complexity of exascale communication networks brings challenges such as contention avoidance, node mapping, and energy efficiency. Current architectures offer limited introspection, hindering developers’ ability to optimize performance. This talk discusses opportunities for incorporating introspection into hardware and software, introduces visualization tools for communication traffic, and outlines new MPI forum interfaces for portable access to communication data.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "12:15 - 1:00",
+        "title": "Invited Talk 3: Exploring Exascale Interconnection Network Topology Options",
+        "speaker": "Cyriel Minkenberg, Research Staff Member, IBM Zurich Research Laboratory, Zurich, Switzerland",
+        "abstract": "As HPC interconnection networks approach exascale, challenges such as scalability, power, and cost dominate design decisions. This talk reviews promising low-diameter topologies that balance cost and performance using moderate-radix switches. It also discusses how increased compute density per node reshapes topology requirements and the need to rethink communication-computation balance in next-generation systems.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "1:00 - 2:00",
+        "title": "Lunch Break"
+      },
+      {
+        "time": "2:00 - 2:45",
+        "title": "Invited Talk 4: Interconnect Related Research at Oak Ridge National Laboratory",
+        "speaker": "Arthur (Barney) Maccabe, Division Director, Computer Science and Mathematics, Oak Ridge National Laboratory",
+        "abstract": "Oak Ridge National Laboratory researchers are addressing the widening gap between interconnect performance and exascale requirements. This presentation covers ongoing research on application-level interconnect characterization, programming model support (MPI and OpenSHMEM), unified communication frameworks (UCX), and explorations toward a unified abstraction for multi-level interconnects encompassing intra-node, inter-node, and I/O systems.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "2:45 - 4:00",
+        "title": "Research Paper Session",
+        "chair": "Hari Subramoni, The Ohio State University",
+        "papers": [
+          {
+            "title": "Latency-Avoiding Dynamic Optical Circuit Prefetching Using Application-Specific Predictors",
+            "authors": "Ke Wen, Sebastien Rumley, Jeremiah Wilke, and Keren Bergman, Columbia University",
+            "attachments": {
+              "pdf": "",
+              "youtube": "",
+              "slides": [""]
+            }
+          },
+          {
+            "title": "Intra-Application Data-Communication Characterization",
+            "authors": "Imran Ashraf, Vlad-Mihai Sima, and Koen Bertels, Delft University of Technology",
+            "attachments": {
+              "pdf": "/static/media/mvapich/mvapich2-2.2-userguide.html",
+              "youtube": "",
+              "slides": [""]
+            }
+          }
+        ]
+      },
+      {
+        "time": "4:00 - 4:30",
+        "title": "Coffee Break"
+      },
+      {
+        "time": "4:30 - 6:00",
+        "title": "Panel: Top 5 Challenges for Exascale Interconnects",
+        "moderator": "Ron Brightwell, Sandia National Laboratories",
+        "panelists": [
+          "Taisuke Boku, Professor, University of Tsukuba, Japan",
+          "Richard Graham, Senior Solutions Architect, Mellanox Technologies",
+          "Michael A. Heroux, Distinguished Member of the Technical Staff, Sandia National Laboratories",
+          "Cyriel Minkenberg, Research Staff Member, IBM Zurich Research Laboratory, Switzerland",
+          "Mondrian Nuessle, Co-founder and Managing Director, Extoll",
+          "Duncan Roweth, Senior Principal Engineer, Office of the CTO, Cray"
+        ],
+        "attachments": {
+          "pdf": "",
+          "youtube": "",
+          "notes": "Slides coming soon!"
+        }
+      },
+      {
+        "time": "6:00 - 6:10",
+        "title": "Closing Remarks",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      }
+    ]
+  }
+  

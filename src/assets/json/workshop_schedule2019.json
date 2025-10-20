@@ -1,0 +1,148 @@
+{
+    "schedule": [
+      {
+        "time": "8:50 - 9:00",
+        "title": "Opening Remarks",
+        "speakers": "Hari Subramoni and Dhabaleswar K (DK) Panda, The Ohio State University"
+      },
+      {
+        "time": "9:00 - 10:00",
+        "title": "Keynote: Building an Interconnect for the Exascale Era",
+        "speaker": "Steven L. Scott, Senior Vice President and Chief Technology Officer, Cray Inc.",
+        "abstract": "As we enter the exascale era, workloads are becoming increasingly heterogeneous, with AI and data analytics supporting traditional simulation and modeling. Meanwhile, CMOS performance is plateauing, leaving parallelism as the main path to performance gains. This increases demands on the system interconnect to scale, deliver high throughput, and isolate workloads. This talk presents Slingshot, Cray’s next-generation interconnect combining Ethernet compatibility with advanced HPC features for sustained throughput, uniform low latency, and flexible QoS and congestion control mechanisms.",
+        "bio": "Steve Scott serves as Senior Vice President and Chief Technology Officer at Cray, guiding the long-term technical direction for supercomputing, storage, and analytics. He previously held senior positions at Google and NVIDIA and was the chief architect for several Cray supercomputers. Dr. Scott holds 41 U.S. patents and has received the ACM Maurice Wilkes Award and IEEE Seymour Cray Computer Engineering Award. He earned his Ph.D. in Computer Architecture from the University of Wisconsin-Madison and is a Fellow of IEEE and ACM.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "10:00 - 10:30",
+        "title": "InfiniBand In-Network Computing Technology and Roadmap",
+        "speaker": "Dror Goldenberg, Vice President of Software Architecture, Mellanox Technologies",
+        "abstract": "In-Network Computing transforms the data center interconnect into a ‘Distributed CPU’ and ‘Distributed Memory’, overcoming performance bottlenecks and enabling faster, more scalable data analysis. HDR 200G InfiniBand In-Network Computing includes technologies such as Scalable Hierarchical Aggregation and Reduction Protocol (SHARP), Smart Tag Matching, and Rendezvous Protocol. These technologies power many of the largest supercomputers globally. This talk discusses current technology and future roadmap developments.",
+        "bio": "Dror Goldenberg joined Mellanox in 2000 as an architect and has led the design of multiple generations of NICs, switches, and SoCs. He currently focuses on software architecture enabling acceleration in AI, HPC, cloud, and security. He holds several patents in high-speed networking and an MBA from the Technion Institute of Technology, Israel.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "10:30 - 11:00",
+        "title": "Tofu Interconnect D for the Post-K System",
+        "speaker": "Yuichiro Ajima, Senior Architect, Fujitsu, Japan",
+        "abstract": "Tofu Interconnect D (TofuD) is the new interconnect for the Post-K system, designed for highly scalable systems with dense nodes. TofuD builds on Tofu2, introducing resilience improvements with dynamic packet slicing. This presentation covers design insights and preliminary performance evaluation results for TofuD.",
+        "bio": "Yuichiro Ajima is a Senior Architect at Fujitsu Limited, where he develops advanced supercomputer systems, including the K computer. He is the architect of the Tofu interconnect series and received the Imperial Invention Prize in 2014. He holds B.S., M.S., and Ph.D. degrees in Information Engineering from the University of Tokyo.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "11:00 - 11:30",
+        "title": "Break"
+      },
+      {
+        "time": "11:30 - 12:00",
+        "title": "The Blue Brain Project: A Computing and Network Perspective",
+        "speaker": "Felix Schürmann, Adjunct Professor, EPFL and Co-director of the EPFL Blue Brain Project",
+        "abstract": "The EPFL Blue Brain Project pioneers simulation-based neuroscience by modeling brain tissue at high fidelity. This talk explores computational and networking challenges in scaling brain simulations, discussing workflow complexity, weak scaling, and multi-timescale computation. It also highlights future directions for biologically inspired computing and HPC integration.",
+        "bio": "Felix Schürmann is Adjunct Professor at EPFL and Co-director of the Blue Brain Project. He leads computing research, managing over 60 scientists in HPC, visualization, and software engineering. His background includes physics studies in Heidelberg and SUNY Buffalo and a Ph.D. in neural hardware simulation from the University of Heidelberg.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "12:00 - 12:30",
+        "title": "Introduction of KISTI-5 Computer, NURION",
+        "speaker": "Tae Young Hong, Director of Supercomputing Infrastructure Center, KISTI, South Korea",
+        "abstract": "The KISTI-5 system, Nurion, is one of the world’s largest commodity cluster systems providing national HPC resources for Korean academia and industry. The 8,305-node Intel KNL cluster with Intel OPA interconnect achieves 13.92 PFlops in HPL and ranks #11 on the June 2018 Top500. This talk presents its architecture, storage integration, and operational challenges.",
+        "bio": "Tae Young Hong is Director of the Supercomputing Infrastructure Center at KISTI, leading national HPC acquisitions and operations. His research interests include large-scale HPC system reliability and interconnect performance. He holds B.S. and M.S. degrees in Physics from Sungkyunkwan University, Korea.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "12:30 - 1:00",
+        "title": "AI Bridging Cloud Infrastructure (ABCI) and Its I/O Architecture",
+        "speaker": "Hirotaka Ogawa, Director, AIST-Tokyo Tech Real-World Bigdata Computation Open Innovation Laboratory (RWBC-OIL), Japan",
+        "abstract": "ABCI is the world’s first large-scale Open AI Computing Infrastructure, delivering 19.9 PFlops of performance and record-breaking AI training speed. Built by AIST, it features dual-rail InfiniBand, GPU acceleration, and advanced I/O architecture with NVMe Flash, BeeOND file system, and S3-mimic object storage. This talk outlines its network and I/O design.",
+        "bio": "Dr. Hirotaka Ogawa is Director of AIST-Tokyo Tech RWBC-OIL and Technical Lead of the AI Bridging Cloud Infrastructure (ABCI). He holds B.Eng. and M.Eng. from the University of Tokyo and a Ph.D. in Science from Tokyo Institute of Technology. He continues to lead design and operation of Japan’s leading AI cloud infrastructure.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "1:00 - 2:00",
+        "title": "Lunch"
+      },
+      {
+        "time": "2:00 - 2:30",
+        "title": "HPC in the Cloud: Embracing the Software Defined Network",
+        "speaker": "Brian Barrett, Principal Engineer, High Performance Computing Group, Amazon Web Services",
+        "abstract": "This talk explores how AWS Elastic Fabric Adapter (EFA) bridges cloud flexibility with the tightly coupled communication demands of HPC. It discusses EFA’s architecture, initial performance results, and design trade-offs that enable large-scale HPC applications to run efficiently in the cloud.",
+        "bio": "Brian Barrett is a Principal Engineer in AWS’s HPC group, leading the Elastic Fabric Adapter project. He previously worked at Sandia National Laboratories on MPI and the Portals 4 network interface. Brian co-founded the Open MPI project and holds a Ph.D. in Computer Science from Indiana University.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "2:30 - 3:00",
+        "title": "Exascale in the Era of Hyperscale – The Many Flavors of Microsoft Azure’s Journey to 10¹⁸",
+        "speaker": "Evan Burness, Principal Engineer, Specialized Computing Division, Microsoft Azure",
+        "abstract": "Exascale computing and hyperscale cloud platforms are converging. This talk discusses Microsoft Azure’s architecture for exascale workloads, covering global datacenter interconnects, public cloud scalability, and innovations in HPC infrastructure for large-scale distributed computing.",
+        "bio": "Evan Burness is Principal Engineer in Microsoft Azure’s Specialized Computing division. He leads HPC infrastructure architecture, focusing on scalability and performance for large parallel applications. Previously, he managed HPC architecture at Cycle Computing and NCSA. Evan holds an M.S. from the University of Illinois and a B.A. from Duke University.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "3:00 - 3:30",
+        "title": "Meeting the Future Needs of HPC with MPI",
+        "speaker": "Ron Brightwell, R&D Manager, Scalable System Software, Sandia National Laboratories",
+        "abstract": "MPI remains central to HPC programming but must evolve to meet heterogeneous and cloud-integrated workloads. This talk examines future requirements for MPI, including new communication models, integration with cloud infrastructure, and expanded support for asynchronous workflows.",
+        "bio": "Ron Brightwell leads the Scalable System Software Department at Sandia National Laboratories. A veteran of HPC interconnect software since the ASCI Red project, he has contributed to MPI-2 and MPI-3 standards. Ron is a Senior Member of IEEE and ACM and serves as an Associate Editor for IEEE TPDS.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "3:30 - 4:00",
+        "title": "Research Paper Session: Software and Hardware Co-Design for Low-Power HPC Platforms",
+        "chair": "Hari Subramoni, The Ohio State University",
+        "speakers": "Manolis Ploumidis, Nikolaos Kallimanis, Marios Asiminakis, Nikolaos Chrysos, Vassilis Papaustathiou, Pantelis Xirouchakis, Michalis Gianioudis, Nikolaos Dimou, Antonis Psistakis, Panagiotis Peristerakis, Manolis Katevenis, Foundation For Research & Technology – Hellas (FORTH)",
+        "abstract": "This paper presents a cross-layer communication architecture for emerging HPC platforms based on heterogeneous multiprocessors. The architecture combines hardware blocks integrated within processing units with a user-space software stack for low-latency, reliable communication. The MPI implementation achieves 1.4 μs end-to-end latency via eager protocol optimization.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "4:00 - 4:30",
+        "title": "Break"
+      },
+      {
+        "time": "4:30 - 6:00",
+        "title": "Panel: Are the FPGAs a Silver Bullet for Exascale?",
+        "moderator": "Nectarios Koziris, Dean, School of Electrical and Computer Engineering, National Technical University of Athens, Greece",
+        "panelists": [
+          "Holger Fröning, Heidelberg University, Germany",
+          "Tobias Kenter, Paderborn Center for Parallel Computing (PC2), Paderborn University, Germany",
+          "Iakovos Mavroidis, Institute of Computer Science (ICS), Foundation for Research and Technology – Hellas (FORTH), Greece",
+          "Javier Navaridas Palma, School of Computer Science, University of Manchester, UK",
+          "Piero Vicini, National Institute for Nuclear Physics (INFN), Italy"
+        ],
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      }
+    ]
+  }
+  

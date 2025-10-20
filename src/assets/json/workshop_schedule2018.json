@@ -1,0 +1,151 @@
+{
+    "schedule": [
+      {
+        "time": "8:50 - 9:00",
+        "title": "Opening Remarks",
+        "speakers": "Hari Subramoni and Dhabaleswar K (DK) Panda, The Ohio State University"
+      },
+      {
+        "time": "9:00 - 10:00",
+        "title": "Keynote: Network Challenges and Directions for the Exascale Era",
+        "speaker": "Craig Stunkel, Principal Research Staff Member, IBM T. J. Watson Research Center, Yorktown Heights, NY",
+        "abstract": "This talk outlines the major challenges in building high-performance networks for exascale systems and discusses desirable network attributes for emerging workloads. Topics include recent network trends and promising ideas in technologies, topologies, protocols, and offloaded remote transactions for addressing exascale requirements.",
+        "bio": "Craig Stunkel is a Principal Research Staff Member at IBM’s T. J. Watson Research Center and Network Lead in the Data Centric Systems department. He has contributed to the design of every IBM SP supercomputer generation and the Blue Gene series. Dr. Stunkel holds 14 U.S. patents in switching networks and is an IEEE Fellow. He earned his Ph.D. in Electrical Engineering from the University of Illinois, Urbana.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "10:00 - 10:30",
+        "title": "Vanguard: Maturing the Arm Ecosystem for U.S. DOE/ASC Supercomputing",
+        "speaker": "Kevin Pedretti, Principal Member of Technical Staff, Sandia National Laboratories",
+        "abstract": "This talk discusses DOE’s initiative to mature the Arm ecosystem for Advanced Simulation and Computing (ASC) workloads. It highlights software stack requirements, ARMv8 programming environment development, compiler and math library optimizations, and network stack performance enhancements for scalable, integrated HPC/Data Analytic Computing environments.",
+        "bio": "Kevin Pedretti is a Principal Member of Technical Staff at Sandia National Laboratories, focusing on scalable system software for extreme-scale parallel computing. His work includes lightweight OS design, networking, and power management. He leads efforts to develop Arm software stacks for DOE ASC systems.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "10:30 - 11:00",
+        "title": "InfiniBand In-Network Computing Technology and Roadmap",
+        "speaker": "Dror Goldenberg, Vice President of Software Architecture, Mellanox Technologies",
+        "abstract": "Co-design collaboration is reshaping HPC and AI through intelligent networking that offloads computation from CPUs. This session discusses InfiniBand In-Network Computing, which turns the network into a distributed co-processor, improving scalability and efficiency for exascale workloads. Latest performance results and deployment experiences will be shared.",
+        "bio": "Dror Goldenberg is Vice President of Software Architecture at Mellanox Technologies, leading development across software, firmware, and systems. A Mellanox veteran since 2000, he has contributed to PCI and InfiniBand specifications, holds multiple patents, and earned an MBA and B.Sc. in Electrical Engineering from the Technion, Israel.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "11:00 - 11:30",
+        "title": "Break"
+      },
+      {
+        "time": "11:30 - 12:00",
+        "title": "Advanced Network Semantics for Converged HPC, Analytics, and AI Workloads",
+        "speaker": "Sayantan Sur, Software Engineer, Intel Corporation",
+        "abstract": "AI and data analytics workloads increasingly demand high-performance fabric communication to handle massive east-west data movement. This talk discusses evolving network semantics and the role of the Open Fabrics Interface in enabling scalable, converged HPC and AI systems for data-intensive cloud and on-prem environments.",
+        "bio": "Sayantan Sur is a Software Engineer at Intel specializing in scalable interconnection fabrics and MPI. Formerly a Research Scientist at The Ohio State University and Postdoc at IBM T. J. Watson, he has published over 20 papers in HPC networking and holds a Ph.D. from The Ohio State University.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "12:00 - 12:30",
+        "title": "ABCI: AI Bridging Cloud Infrastructure for Scalable AI/Big Data",
+        "speaker": "Hitoshi Sato, Senior Research Scientist, National Institute of Advanced Industrial Science and Technology (AIST), Japan",
+        "abstract": "ABCI is Japan’s open innovation platform for AI and Big Data, delivering 0.55 ExaFlops for AI and 37 PetaFlops for HPC. This talk discusses ABCI’s architecture — combining GPU clusters, container-based software management, hierarchical storage, and scalable interconnects — and explores challenges in HPC-AI convergence.",
+        "bio": "Hitoshi Sato is a Senior Research Scientist at AIST’s Artificial Intelligence Research Center, where he works on AI/HPC integration and data-intensive computing for extreme-scale systems. He joined AIST in 2016 and has been involved with the ABCI project since its inception.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "12:30 - 1:00",
+        "title": "DataFlow SuperComputing for Big Data Analytics",
+        "speaker": "Veljko Milutinovic, Academy of Europe",
+        "abstract": "This talk explores DataFlow SuperComputing and its advantages over traditional ControlFlow computing in speed, energy efficiency, and precision. It discusses the programming model and its potential for Big Data analytics using Maxeler systems and insights inspired by Nobel Laureate collaborations. Applications include ML, vision, and scientific simulation.",
+        "bio": "Prof. Veljko Milutinovic is a researcher in dataflow computing and data analytics, formerly at Purdue University and University of Belgrade. He co-designed DARPA’s first GaAs RISC microprocessor and Systolic Array and has authored numerous books and papers, with collaborations involving several Nobel Laureates.",
+        "attachments": {
+          "ppt": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "1:00 - 2:00",
+        "title": "Lunch"
+      },
+      {
+        "time": "2:00 - 2:30",
+        "title": "Interconnects and Topology Options Enabled by Co-Packaged Optics",
+        "speaker": "Nicolas Dubé, Chief Strategist for HPC, Hewlett Packard Enterprise",
+        "abstract": "Copper interconnects are approaching physical and economic limits. This talk explores how co-packaged optics, replacing active optical cables with passive ones, enable new HPC topologies and fabric planes with improved efficiency, density, and cost performance.",
+        "bio": "Dr. Nicolas Dubé is Chief Strategist for High-Performance Computing at Hewlett Packard Enterprise and Chief Architect for Exascale initiatives. He previously led the Apollo 8000 project and advocates for sustainable computing through energy-efficient architectures and heat reuse systems.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "2:30 - 3:00",
+        "title": "Delivering Scalable Communication Solutions for Diverse Workloads: The Cray Approach",
+        "speaker": "Luiz DeRose, Senior Principal Engineer and Programming Environments Director, Cray Inc.",
+        "abstract": "Coming soon.",
+        "bio": "Dr. Luiz DeRose is Senior Principal Engineer and Programming Environments Director at Cray Inc., responsible for compiler and runtime strategy. Formerly at IBM Research, he has published over 50 papers in compilers and performance tools for HPC. He holds a Ph.D. in Computer Science from UIUC.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "3:00 - 4:00",
+        "title": "Research Paper Session",
+        "chair": "Hari Subramoni, The Ohio State University",
+        "papers": [
+          {
+            "title": "Supercomputer in a Laptop: Distributed Application and Runtime Development via Architecture Simulation",
+            "authors": "Samuel Knight, Joseph Kenny, Jeremiah J. Wilke, Sandia National Laboratories",
+            "abstract": "This paper demonstrates the Structural Simulation Toolkit (SST) for virtualizing large-scale MPI runtimes within a single process, creating a 'supercomputer in a laptop.' It enables deterministic debugging, runtime analysis, and simulation of production communication runtimes like GASNet over uGNI for next-generation HPC systems."
+          },
+          {
+            "title": "Comparing ControlFlow and DataFlow for Tensor Calculus: Speed, Power, Complexity, and MTBF",
+            "authors": "Milos Kotlar, School of Electrical Engineering, University of Belgrade; Veljko Milutinovic, Mathematical Institute of the Serbian Academy of Arts and Sciences",
+            "abstract": "This paper compares ControlFlow and DataFlow paradigms for tensor operations used in ML and data analytics. Results show significant advantages in speed, energy, and complexity for DataFlow implementations, with implications for future large-scale and exascale computing platforms."
+          }
+        ],
+        "attachments": {
+          "ppt": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "4:00 - 4:30",
+        "title": "Break"
+      },
+      {
+        "time": "4:30 - 6:00",
+        "title": "Panel: Performance Analysis and Instrumentation for Current and Future Extreme-Scale Networks",
+        "moderator": "Ron Brightwell, R&D Manager, Scalable System Software, Sandia National Laboratories",
+        "panelists": [
+          "Luiz DeRose, Senior Principal Engineer and Programming Environments Director, Cray Inc.",
+          "Torsten Hoefler, Associate Professor, ETH Zürich",
+          "Bernd Mohr, Institute for Advanced Simulation (IAS), Jülich Supercomputing Centre (JSC)",
+          "Sameer Shende, Director, Performance Research Lab, NIC, University of Oregon",
+          "Anthony Skjellum, Professor, The University of Tennessee at Chattanooga"
+        ],
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "6:00 - 6:10",
+        "title": "Closing Remarks"
+      }
+    ]
+  }
+  
