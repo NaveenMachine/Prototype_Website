@@ -33,6 +33,7 @@ import TravelGrants from './components/TravelGrants.jsx';
 import MiniBanner from './components/MiniBanner.jsx';
 import CommitteeTab from './components/CommitteeTab.jsx';
 import OrganizersTab from './components/OrganizersTab.jsx';
+import CallForPosters from './components/CallForPosters.jsx';
 
 
 
@@ -92,7 +93,7 @@ function App() {
             element={
               <section className="body">
                 <Container>
-                  <CallForPapers />
+                  <CallForPosters />
                 </Container>
               </section>
             }

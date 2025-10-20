@@ -4,7 +4,13 @@
     margin-bottom: 100px;
   }
 
-
+  .about h2 {
+    margin-top: 0;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center; /* ✅ Centers all inline and inline-block text elements */
+  }
   
   .about h3 {
     margin-top: 0;

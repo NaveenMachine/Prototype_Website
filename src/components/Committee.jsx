@@ -18,9 +18,11 @@ const speakers = [
 const Committee = () => {
   return (
     <section className="committee" id="committee">
-      <h2>Program Committee (TBD)</h2>
+      <h2>Technical Program Committee</h2>
 
-      <table className="committee-table">
+      <p>More details will be available soon.</p>
+
+      {/* <table className="committee-table">
         <tbody>
           {speakers.map(([left, right], i) => (
             <tr key={i}>
@@ -29,7 +31,7 @@ const Committee = () => {
             </tr>
           ))}
         </tbody>
-      </table>
+      </table> */}
     </section>
   );
 };

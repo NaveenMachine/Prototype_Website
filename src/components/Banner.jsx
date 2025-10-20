@@ -19,9 +19,7 @@ const Banner = () => {
                         <h2>
                             {`HARVEST-Vision: Second International Workshop on Applications of CV and HPC in Agriculture`}
                         </h2>
-                        <h3>March 6th, 2026 | The Catamaran Resort Hotel, San Diego, CA</h3>
-                        <p>In Cooperation with  <a href="https://icpp2025.sdsc.edu/home" target="_blank">The 54th International Conference on Parallel Processing (ICPP), 2025</a></p>
-                        
+                        <h3>March 6th, 2026 | JW Marriott Starpass in Tucson, Arizona</h3>
                     </Col>
                 </Row>
             </Container>
