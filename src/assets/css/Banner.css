@@ -16,6 +16,12 @@
     display: block;
   }
 
+  .banner h3 {
+    margin-bottom: 20px;
+    display: block;
+  }
+ 
+
   .banner p {
     color: #B8B8B8;
     font-size: 18px;

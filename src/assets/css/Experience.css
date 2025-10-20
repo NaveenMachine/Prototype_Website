@@ -8,6 +8,25 @@
     justify-content: space-evenly;
     margin-bottom: 25px;
   }
+
+  .experience h2 {
+    margin-top: 0;
+    padding: 150px 0 10px 0;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center; /* ✅ Centers all inline and inline-block text elements */
+  }
+  
+  /* ✅ Center all heading levels */
+  .banner h1,
+  .banner h2,
+  .banner h3 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
   
   .experience-button {
     font-size: 22px;

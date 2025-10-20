@@ -6,7 +6,7 @@ import About from './components/CallForPapers.jsx';
 import { Container } from 'react-bootstrap';
 import './assets/css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Experience from './components/Experience.jsx';
+import Agenda from './components/Agenda.jsx';
 import Projects from './components/Images.jsx';
 import Contact from './components/Apply.jsx';
 import Footer from './components/Footer.jsx';
@@ -28,6 +28,11 @@ import Exacomm2022Page from './components/Exacomm2022/Page.jsx';
 import Exacomm2023Page from './components/Exacomm2023/Page.jsx';
 import CallForPapers from './components/CallForPapers.jsx';
 import Harvest2025Page from './components/Harvest2025/Page.jsx';
+import IcicleTraining from './components/IcicleTraining.jsx';
+import TravelGrants from './components/TravelGrants.jsx';
+import MiniBanner from './components/MiniBanner.jsx';
+import CommitteeTab from './components/CommitteeTab.jsx';
+import OrganizersTab from './components/OrganizersTab.jsx';
 
 
 
@@ -36,6 +41,9 @@ function App() {
     { label: 'Home', path: '/' },
     { label: 'Call for Papers', path: '/call-for-papers' },
     { label: 'Call for Posters', path: '/call-for-posters' },
+    { label: 'Agenda', path: '/agenda' },
+    { label: 'Committees', path: '/committees' },
+    { label: 'Travel Grants', path: '/travel-grants' },
     { label: 'Past Events', path: '/past-events' },
   ];
 
@@ -54,12 +62,13 @@ function App() {
                 <section className="body">
                   <Container className="box">
                     <SocialImpact />
+                    <Contact />
                     <Organizers />
                     <Committee />
-                    <Experience />
+                    <IcicleTraining />
                   </Container>
                 </section>
-                <Contact />
+                
                 <Footer />
               </>
             }
@@ -84,6 +93,41 @@ function App() {
               <section className="body">
                 <Container>
                   <CallForPapers />
+                </Container>
+              </section>
+            }
+          />
+
+          <Route
+            path="/agenda"
+            element={
+              <section className="body">
+                <Container>
+                  <Agenda />
+                </Container>
+              </section>
+            }
+          />
+           <Route
+            path="/committees"
+            element={
+              <section className="body">
+                <Container>
+                  <MiniBanner/>
+                  <OrganizersTab />
+                  <CommitteeTab />
+                </Container>
+              </section>
+            }
+          />
+
+          <Route
+            path="/travel-grants"
+            element={
+              <section className="body">
+                <Container>
+                  <MiniBanner/>
+                  <TravelGrants />
                 </Container>
               </section>
             }

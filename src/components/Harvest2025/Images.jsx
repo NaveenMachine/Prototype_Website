@@ -8,11 +8,11 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
 
 // ✅ Load all images from folder
-const images = import.meta.glob('../../assets/img/ExaComm2023/*.{avif,png,jpg,jpeg,svg}', { eager: true });
+const imagesDay1 = import.meta.glob('../../assets/img/Harvest2025/Day1/*.{avif,png,jpg,jpeg,svg}', { eager: true });
 
 const Images = () => {
   // ✅ Convert the imported object into an array of image paths
-  const imageList = Object.values(images).map((img, idx) => img.default);
+  const imageList = Object.values(imagesDay1).map((img, idx) => img.default);
 
   return (
     <section className="projects" id="projects">

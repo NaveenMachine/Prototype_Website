@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import contactImg from "../assets/img/lab/stock_image.png"
 import emailjs from '@emailjs/browser'
 
-import '../assets/css/Contact.css'
+import '../assets/css/About.css'
 
 const Contact = () => {
     const formInitialDetails = {
@@ -75,14 +75,13 @@ const Contact = () => {
     }
 
     return (
-        <section className="contact-section" id="contact">
+        <section className="about" id="contact">
             <Container>
-                <Row className="align-items-center">
-                    <Col size={12} md={5}>
-                        <img src = {contactImg} alt="Contact Me"></img>
-                    </Col>
-                    <Col>
-                        <h1>Submission Instructions</h1>
+
+            <h2>Important Dates</h2>
+                <Row className="left-align">
+                   
+                    <Col size={12} md={12}>
                         <form ref={form} onSubmit={sendEmail}>
                             <Row>
                                 <Col size={12} sm={12} className="column">
@@ -99,7 +98,7 @@ const Contact = () => {
                                     <b>Camera-ready deadline:</b>  Jan 09, 2026 11:59 PM PST 
                                 </Col>
                             </Row>
-                            <Row>
+                            {/* <Row>
                                 <Col size={12} className="px-1">
                                    
                                 <button
@@ -109,7 +108,7 @@ const Contact = () => {
                                 </button>
 
                                 </Col>
-                            </Row>
+                            </Row> */}
                             
                         </form>
                     </Col>

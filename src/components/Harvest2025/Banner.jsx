@@ -10,24 +10,15 @@ const Banner = () => {
     return (
         <section className="banner" id="home">
             <Container>
-                <Row className="align-items-center">
-                    <Col xs={12} md={6} xl={7} className="column">
-                        <h1>
-                            {`Eighth International Workshop on Communication Architectures for
-HPC, Big Data, Deep Learning and Clouds at Extreme Scale`}
+            <h1>
+                            {`First International Workshop on Applications of HPC and AI in Agriculture`}
                         </h1>
-                        <p>Workshop Date: Thursday, May 25, 2023</p>
-                        <p>Location: Hamburg, Germany</p>
-                        
-                        
-                    </Col>
-                    <Col xs={12} md={6} xl={5} className="img-col">
-                        <img src={headerImg} alt="header img" />
-                    </Col>
-                </Row>
+                        <h2>Workshop Date: September 9-10, 2025</h2>
+                        <h2>Location: The Catamaran Resort Hotel, San Diego, CA</h2>
+                        <p>In Cooperation with <a href='https://icpp2025.sdsc.edu/'>The 54th International Conference on Parallel Processing (ICPP), 2025</a></p>
             </Container>
         </section>
     )
-}
+} 
 
 export default Banner

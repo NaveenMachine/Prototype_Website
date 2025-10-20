@@ -15,6 +15,12 @@
     color: white;
     font-weight: 700;
   }
+  .workshop-program h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 700;
+  }
 
   .attachment-links a {
     color: white;
