@@ -1,42 +1,18 @@
 import React, { useState } from 'react';
 import '../../assets/css/WorkshopProgram.css';
+import data from '../../assets/json/workshop_schedule2023.json'; // import JSON
+import { Youtube, FileEarmarkPdfFill } from 'react-bootstrap-icons';
 
 const Keynotes = () => {
   const [open, setOpen] = useState(null);
 
-  const schedule = [
-    {
-      time: "2:00 - 2:05 PM",
-      title: "Opening Remarks",
-      speakers: "Hari Subramoni, Aamir Shafi, and Dhabaleswar K (DK) Panda, The Ohio State University",
-    },
-    {
-      time: "2:05 - 2:40 PM",
-      title: "Keynote: Aurora Exascale Architecture",
-      speaker: "Dr. Kalyan Kumaran, Argonne National Laboratory",
-      chair: "Dhabaleswar K (DK) Panda, The Ohio State University",
-      abstract:
-        "Aurora is an exascale supercomputer in the final stages of assembly at the Argonne Leadership Computing Facility...",
-      bio:
-        "Dr. Kalyan Kumaran is a Senior Computer Scientist and Director of Technology at the Argonne Leadership Computing Facility...",
-    },
-    {
-      time: "2:40 - 3:00 PM",
-      title: "Addressing HPC/AI Performance Bottlenecks with BlueField DPUs",
-      speaker: "Gilad Shainer, NVIDIA",
-      chair: "TBD",
-      abstract:
-        "AI and scientific workloads demand ultra-fast processing of high-resolution simulations...",
-      bio:
-        "Gilad Shainer serves as senior vice-president of networking at NVIDIA...",
-    },
-  ];
-
   return (
     <section className="workshop-program" id="program">
       <h2>Workshop Program</h2>
+      <p className="timezone">{data.timezone}</p>
+
       <div className="program-container">
-        {schedule.map((session, index) => (
+        {data.schedule.map((session, index) => (
           <div
             key={index}
             className={`program-content ${open === index ? 'program-open' : ''}`}
@@ -82,6 +58,38 @@ const Keynotes = () => {
                     <b>Speaker Bio:</b> {session.bio}
                   </p>
                 )}
+
+                {/* Attachments */}
+                {session.attachments &&
+                  (session.attachments.youtube || session.attachments.pdf) && (
+                    <div className="attachments">
+                      <b>Attachments:</b>
+                      <div className="attachment-links">
+                        {session.attachments.youtube && (
+                          <a
+                            href={session.attachments.youtube}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="attachment-btn youtube-btn"
+                          >
+                            <Youtube className="attachment-icon" /> YouTube
+                          </a>
+                        )}
+                        {session.attachments.pdf && (
+                          <a
+                          href={session.attachments.pdf}
+                          download
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="attachment-btn pdf-btn"
+                        >
+                          <FileEarmarkPdfFill className="attachment-icon" /> Slides (PDF)
+                        </a>
+                        
+                        )}
+                      </div>
+                    </div>
+                  )}
               </div>
             </div>
           </div>

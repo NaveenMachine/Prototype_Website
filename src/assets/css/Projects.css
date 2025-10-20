@@ -1,7 +1,13 @@
 .projects {
     margin-top: 60px;
 }
-
+.projects h2 {
+    text-align: center;
+    font-size: 2rem; /* optional, for styling */
+    margin-bottom: 20px; /* optional spacing */
+    color: white; /* optional text color */
+  }
+  
 .project-container {
     overflow: initial;
     margin-top: 40px;

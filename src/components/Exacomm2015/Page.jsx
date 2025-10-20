@@ -1,12 +1,12 @@
 // src/components/Exacomm2015/Page.jsx
 import React from "react";
-import Banner2015 from "./Banner.jsx";
+import Banner from "./Banner.jsx";
 import { Container } from "react-bootstrap";
 
 export default function Exacomm2015Page() {
   return (
     <>
-      <Banner2015 />
+      <Banner />
       <section className="body">
         <Container>
           <h2>ExaComm 2015 Highlights</h2>

@@ -1,0 +1,131 @@
+{
+   "schedule": [
+      {
+        "time": "2:00 - 2:05 PM",
+        "title": "Opening Remarks",
+        "speakers": "Hari Subramoni, Aamir Shafi, and Dhabaleswar K (DK) Panda, The Ohio State University"
+      },
+      {
+        "time": "2:05 - 2:40 PM",
+        "title": "Keynote: Aurora Exascale Architecture",
+        "speaker": "Dr. Kalyan Kumaran, Argonne National Laboratory",
+        "chair": "Dhabaleswar K (DK) Panda, The Ohio State University",
+        "abstract": "Aurora is an exascale supercomputer in the final stages of assembly at the Argonne Leadership Computing Facility (ALCF) in the U.S. This talk will focus on the Aurora hardware and software architectures with emphasis on the interconnect and programming models, and their impact on application performance and scalability.",
+        "bio": "Dr Kalyan Kumaran is a Senior Computer Scientist and Director of Technology at the Argonne Leadership Computing Facility. He leads the Non-Recurring Engineering (NRE) collaboration with Intel to develop the hardware and software stack for Aurora, Argonne’s first exascale computer. He is an expert on performance-related activities and one of the lead architects from Argonne for their recent systems.",
+        "attachments": {
+          "pdf": "",
+          "youtube": "https://www.youtube.com/watch?v=qDp-5bQhc_E"
+        }
+      },
+      {
+        "time": "2:40 - 3:00 PM",
+        "title": "Addressing HPC/AI Performance Bottlenecks with BlueField Data Processing Units",
+        "speaker": "Gilad Shainer, NVIDIA",
+        "chair": "TBD",
+        "abstract": "AI and scientific workloads demand ultra-fast processing of high-resolution simulations, extreme-size datasets, and highly parallelized algorithms. As these computing requirements continue to grow, the traditional GPU-CPU architecture further suffers from imbalance computing, data latency and lack of parallel or pre-data-processing. The introduction of the Data Processing Unit (DPU) brings a new tier of computing to address these bottlenecks, and to enable, for the first-time, compute overlapping and nearly zero communication latency. The session will deliver a deep dive into DPU computing, and how it can help address long lasting performance bottlenecks. Performance results of a variety of HPC and AI applications will be presented as well.",
+        "bio": "Gilad Shainer serves as senior vice-president of networking at NVIDIA. Mr. Shainer serves as the chairman of the HPC-AI Advisory Council organization, the president of UCF and CCIX consortiums, a member of IBTA and a contributor to the PCISIG PCI-X and PCIe specifications. Mr. Shainer holds multiple patents in the field of high-speed networking. He is a recipient of 2015 R&D100 award for his contribution to the CORE-Direct In-Network Computing technology and the 2019 R&D100 award for his contribution to the Unified Communication X (UCX) technology. Gilad Shainer holds a MSc degree and a BSc degree in Electrical Engineering from the Technion Institute of Technology in Israel.",
+        "attachments": {
+          "pdf": "../../assets/pdf/exacomm2023/",
+          "youtube": "https://www.youtube.com/watch?v=b6ppCtVa73o"
+        }
+      },
+      {
+        "time": "3:00 - 3:20 PM",
+        "title": "Implementation and Performance Development of Omni-Path Express",
+        "speaker": "Douglas Fuller, Cornelis Networks",
+        "chair": "Dhabaleswar K (DK) Panda, The Ohio State University",
+        "abstract": "Cornelis Networks released Omni-Path Express (OPX), its next-generation communication framework, in November 2022. Part of libfabric, OPX is free and open source. This presentation will outline implementation choices and methods used to improve performance on Omni-Path hardware in anticipation of Omni-Path CN5000.",
+        "bio": "Douglas Fuller is vice president of software engineering at Cornelis Networks. Prior to joining Cornelis, Doug led software development teams working on cloud storage at Red Hat. His career in HPC includes experience at universities and HPC centers including Oak Ridge National Laboratory. He first installed MVAPICH 0.9 on the main compute cluster at Arizona State University. Doug holds bachelor’s and master’s degrees in computer science from Iowa State University.",
+        "attachments": {
+          "pdf": "../../assets/pdf/exacomm2023/",
+          "youtube": "https://www.youtube.com/watch?v=LK2sPw2l7W8"
+        }
+      },
+      {
+        "time": "3:20 - 3:40 PM",
+        "title": "Principles for Optimizing Data Movement in Emerging Memory Hierarchies",
+        "speaker": "Pankaj Mehra, Elephance Memory",
+        "chair": "Hari Subramoni, The Ohio State University",
+        "abstract": "The long anticipated split between a performance tier and a capacity tier of memory is finally upon us. By allowing memoryness to spread to increasingly disaggregated memory devices, CXL is enabling new locales for attaching and tapping into memory not only more cost-effectively but perhaps also more efficiently. The net effect on system architecture will be to deploy even more memory. In this presentation, we will extrapolate from existing far memory architectures to first define the requirements and then propose a principled architecture for working with such far memory.",
+        "bio": "Pankaj Mehra is President and CEO of Elephance Memory. He actively advises Memory industry companies and volunteers as Adjunct Associate Professor of Computer Science at UC Santa Cruz. A contributor to InfiniBand 1.0 spec and an inventor of the first RDMA persistent memory devices and filesystems, Pankaj is a systems and software practitioner who conducts his research at the intersection of infrastructure and intelligence. He is a co-author/co-editor/co-inventor on 3 books, and over 100 papers and patents, and a builder of systems that have won recognition from NASA, Sandia National Labs, and Samsung Electronics, among others.",
+        "attachments": {
+          "pdf": "",
+          "youtube": ""
+        }
+      },
+      {
+        "time": "3:40 - 4:00 PM",
+        "title": "Cassini: The Slingshot NIC Hardware and Software Enabling Exascale",
+        "speaker": "Keith Underwood, HPE",
+        "chair": "Hari Subramoni, The Ohio State University",
+        "abstract": "Cassini and Cassini-2 are the 200 Gbps and 400 Gbps Slingshot NICs. This talk will discuss the hardware features and software functionality that enable the Cassini family of NICs to scale to tens of thousands of endpoints.",
+        "bio": "Keith Underwood is a Senior Distinguished Technologist in the HPE Slingshot advanced architecture group where he leads next generation NIC architecture definition. Prior to joining Cray, Keith led the Omni-Path 2 NIC architecture at Intel. He was part of the team that created the Portals 4 API, and the MPI-3 RMA extensions.",
+        "attachments": {
+          "pdf": "../../assets/pdf/exacomm2023/",
+          "youtube": "https://www.youtube.com/watch?v=yxPrDBSgK1Y"
+        }
+      },
+      {
+        "time": "4:00 - 4:30 PM",
+        "title": "Break"
+      },
+      {
+        "time": "4:30 - 4:50 PM",
+        "title": "Compute Express Link (CXL*): Open Load-Store Interconnect for building Composable Systems",
+        "speaker": "Debendra Das Sharma, Intel",
+        "chair": "Hari Subramoni, The Ohio State University",
+        "abstract": "CXL is a dynamic multi-protocol interconnect designed to support accelerators and memory devices with applications in HPC, Enterprise, and Cloud Computing segments. CXL provides a rich set of protocols that include I/O semantics like PCIe (CXL.io), caching protocol semantics (CXL.cache), and memory access semantics (CXL.mem) over PCIe PHY. The second generation of CXL, CXL 2.0, enabled dynamic resource allocation including memory and accelerator dis-aggregation across multiple servers. The third generation of CXL, CXL 3.0, doubles the bandwidth while providing larger scale composable systems with fabrics, coherent shared memory across servers, and load-store unordered I/O message passing.",
+        "bio": "Dr. Debendra Das Sharma is an Intel Senior Fellow in the Data Platforms and Artificial Intelligence Group and chief architect of the I/O Technology and Standards Group at Intel Corporation. He drives PCI Express, Compute Express Link (CXL), Intel’s Coherency interconnect, and multichip package interconnect. He is a co-inventor and founding member of the CXL consortium and co-leads the CXL Technical Task Force. Dr. Das Sharma holds 170+ US patents and 450+ patents world-wide. He is a frequent keynote speaker and has received several industry awards including the PCI-SIG Lifetime Contribution Award.",
+        "attachments": {
+          "pdf": "",
+          "youtube": "https://www.youtube.com/watch?v=ZLh3tGkZzdI"
+        }
+      },
+      {
+        "time": "4:50 - 5:10 PM",
+        "title": "Deep Learning Training using Gaudi2",
+        "speaker": "Karthikeyan Vaidyanathan, Intel/Habana",
+        "chair": "Aamir Shafi, The Ohio State University",
+        "abstract": "Exponential growth in deep learning across a wide range of application domains has accelerated the need for training/inference within an hour or a few minutes. In this talk, I will highlight how Habana Gaudi2 processor significantly improves deep learning training and inference performance as compared to Gaudi1. More importantly, the talk will focus on how customers can scale Gaudi2 to several thousands of nodes with our in-built scale-up and scale-out RoCE v2 RDMA NICs.",
+        "bio": "Karthikeyan Vaidyanathan (Karthik) is a Principal AI Engineer at Intel. His responsibilities include delivering best application performance in large-scale datacenters, defining and optimizing collective communication algorithms, coming up with novel framework-level optimizations and co-designing hardware/software for future scale-out systems. He is an Intel Achievement Awardee and author of several top-tier conference papers and patents.",
+        "attachments": {
+          "pdf": "../../assets/pdf/exacomm2023/",
+          "youtube": "https://www.youtube.com/watch?v=gYig09ppMbY"
+        }
+      },
+      {
+        "time": "5:10 - 5:30 PM",
+        "title": "Heterogeneous, Programmable Silicon for High-Performance Network Processing",
+        "speaker": "Kimon Karras, AMD",
+        "chair": "Aamir Shafi, The Ohio State University",
+        "abstract": "Networking requirements nowadays push the envelope by concurrently demanding higher throughput, lower latency and increasing programmability to surmount challenges in HPC and the data center. These can be addressed only by harvesting software programmability together with heterogeneous hardware to deliver the most efficient solutions. This session will highlight how this is achieved by utilizing DPUs and SmartNICs that leverage the aforementioned technologies.",
+        "bio": "Dr.-Ing. Kimon Karras is a Computer Architect with AMD's Network Technologies & Solutions Group (NTSG). As a member of the NTSG's architecture group he's responsible for researching and specifying innovative architectures to tackle the challenges of the ever increasing throughput & latency demands.",
+        "attachments": {
+          "pdf": "../../assets/pdf/exacomm2023/",
+          "youtube": "https://www.youtube.com/watch?v=etfWwDyqGLY"
+        }
+      },
+      {
+        "time": "5:30 - 6:00 PM",
+        "title": "Myths and Legends in High Performance Networking",
+        "moderator": "Ron Brightwell, Sandia National Laboratory",
+        "summary": "Following from a recent humorous and thought-provoking article analyzing factors and influences in high-performance computing, this panel will similarly explore the past, current, and future drivers impacting network hardware and software for extreme-scale systems in an attempt to separate truth from myth.",
+        "panelists": [
+          "Rich Graham, NVIDIA",
+          "Ryan Grant, Queen's University, Canada",
+          "Shrijeet Mukherjee, Enfabrica"
+        ],
+        "bio": "Ron Brightwell leads the Scalable System Software Department in the Center for Computing Research at Sandia National Laboratories. He was a key contributor to the high-performance interconnect software and lightweight operating system for the world’s first terascale system, the Intel ASCI Red machine, and later for the Cray Red Storm machine, which influenced Cray’s XT line.",
+        "attachments": {
+          "pdf": "../../assets/pdf/exacomm2023/",
+          "youtube": "https://www.youtube.com/watch?v=cbmCEb3UpdI"
+        }
+      },
+      {
+        "time": "6:00 - 6:05 PM",
+        "title": "Closing Remarks",
+        "speakers": "Hari Subramoni, Aamir Shafi, and Dhabaleswar K (DK) Panda, The Ohio State University"
+      }
+    ]
+  }
+  

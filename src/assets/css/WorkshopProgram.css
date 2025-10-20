@@ -15,6 +15,10 @@
     color: white;
     font-weight: 700;
   }
+
+  .attachment-links a {
+    color: white;
+  }
   
   /* Each session container */
   .program-content {

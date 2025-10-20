@@ -4,6 +4,8 @@ import Banner from "./Banner.jsx";
 import { Container } from "react-bootstrap";
 import About from "./About.jsx";
 import Keynotes from "./Keynotes.jsx";
+import Projects from "./Projects.jsx";
+import Footer from "../Footer.jsx";
 
 export default function Exacomm2023Page() {
   return (
@@ -13,8 +15,10 @@ export default function Exacomm2023Page() {
         <Container>
           <About/>
           <Keynotes/>
+          <Projects/>
         </Container>
       </section>
+      <Footer/>
     </>
   );
 }
