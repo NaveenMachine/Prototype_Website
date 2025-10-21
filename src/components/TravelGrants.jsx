@@ -1,11 +1,18 @@
 import React from 'react';
-import '../assets/css/About.css';
+import '../assets/css/CallForPosters.css';
+import { Row, Col } from 'react-bootstrap';
 
 const TravelGrants = () => {
   return (
-    <section className="about" id="about">
-      <h3>Travel Grants</h3>
-      <p>More details will be available soon.</p>
+    <section className="call-for-posters" id="about">
+      <Row className="section-box">
+       <h3>Travel Grants</h3>
+        <Col>
+        <p>More details will be available soon.</p>
+        </Col>
+      </Row>
+      
+      
     </section>
   );
 };

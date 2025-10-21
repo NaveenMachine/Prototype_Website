@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Row, Col } from 'react-bootstrap';
-import '../assets/css/About.css';
+import '../assets/css/CallForPosters.css';
 import data from '../assets/json/chunk-text.json';
 import hari from '../assets/img/lab/Hari.png'
 import scott from '../assets/img/lab/Shearer-Scott2.png'
@@ -12,9 +12,10 @@ const OrganizersTab = () => {
  
 
   return (
-    <section className="about" id="about">
-      <h3>Organizing Committee</h3>
-      <Row className="align-items-center">
+    <section className="call-for-posters" id="about">
+      
+      <Row className="section-box">
+        <h3>Organizing Committee</h3>
         <Col xs={12} lg={6}>
             <p>
             <a href="https://cse.osu.edu/people/subramoni.1"><strong>Hari Subramoni</strong></a>

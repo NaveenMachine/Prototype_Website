@@ -42,9 +42,9 @@ const CallForPosters = () => {
 
   return (
     <>
-    <section className="about" id="about">
+    <section className="call-for-posters" id="about">
     <h2></h2>
-      <Container className="about-box">
+      <Container>
 
       <h2>Call for Posters</h2>
       <h3>ICICLE Harvest Workshop 2026</h3>
@@ -53,7 +53,7 @@ const CallForPosters = () => {
           <p>{about_text}</p>
         </Col>
       </Row> */}
-      <Row className="left-align">
+      <Row className="section-box">
         <Col xs={12} lg={12}>
           <h3>Important Dates</h3>
           <ul>
@@ -64,7 +64,7 @@ const CallForPosters = () => {
           <b>Kindly note that if you miss the January 9th deadline, your work will not appear in the official proceedings. This is a hard deadline</b>
         </Col>
       </Row>
-      <Row className="left-align">
+      <Row className="section-box">
       <Col xs={12} lg={12}>
           <h3>Topics</h3>
           HARVEST 2026 welcomes original submissions in a range of areas, including but not limited to:
@@ -80,7 +80,7 @@ const CallForPosters = () => {
           Papers should present original research and should provide sufficient background material to make them accessible to the broader community.
         </Col>
       </Row>
-      <Row className="left-align">
+      <Row className="section-box">
         <Col xs={12} lg={12}>
           <h3>Submission Information</h3>
           We accept full-length papers (5-8 pages, WACV template, intended for publication in WACV’s workshop proceedings). Accepted contributions will be presented as orals or posters. All submissions should use the
@@ -88,7 +88,7 @@ official WACV template and be submitted via the CMT link on the workshop website
 peer-reviewed by our program committee for technical quality and relevance.
         </Col>
       </Row>
-      <Row className="left-align">
+      <Row className="section-box">
       <h3>Proceedings Information</h3>
         <Col xs={12} lg={12} className='column-item'>
           The workshop proceedings will be published through IEEE and included in the IEEE Xplore digital library.
@@ -103,13 +103,13 @@ peer-reviewed by our program committee for technical quality and relevance.
         Please contact the Program Chairs for any questions/clarifications.
         </Col>
       </Row>
-      <Row className="left-align">
+      <Row className="section-box">
         <Col xs={12} lg={12}>
           <h3>Workshop Registration</h3>
           We do not have a separate workshop registration. Please register for the workshops on the main conference registration page.
         </Col>
       </Row>
-      <Row className="left-align">
+      <Row className="section-box">
         <Col xs={12} lg={12}>
           <h3>Organizing Committee</h3>
           <ul>
@@ -118,7 +118,7 @@ peer-reviewed by our program committee for technical quality and relevance.
           </ul>
         </Col>
       </Row>
-      <Row>
+      <Row className="section-box">
         <Col xs={12} lg={12}>
           <h3>Technical Program Committee</h3>
           More details will be available soon.

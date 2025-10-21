@@ -1,5 +1,6 @@
 import React from 'react';
-import '../assets/css/Committee.css';
+import '../assets/css/CallForPosters.css';
+import { Row, Col, Container } from 'react-bootstrap';
 
 const speakers = [
   ["Christopher Stewart, Ohio State University", "Wei-Lun Chao, Ohio State University"],
@@ -17,9 +18,14 @@ const speakers = [
 
 const CommitteeTab = () => {
   return (
-    <section className="committee" id="committee">
-      <h3>Technical Program Committee</h3>
-      <p>More details will be available soon.</p>
+    <section className="call-for-posters" id="committee">
+        <Row className="section-box">
+            <Col>
+            <h3>Technical Program Committee</h3>
+            <p>More details will be available soon.</p>
+            </Col>
+        </Row>
+      
 
       {/* <table className="committee-table">
         <tbody>

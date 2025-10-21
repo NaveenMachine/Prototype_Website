@@ -1,86 +1,156 @@
-/* Scoped About Section */
-.about {
+/* Scoped call-for-posters Section */
+.call-for-posters {
     margin-top: 10px;
     margin-bottom: 100px;
-  }
-
-  .about h2 {
-  text-align: center;
-  position: relative;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-
-.about h2::after{
-  content: "";
-  display: block;
-  width: 300px;
-  height: 4px;
-  margin: 10px auto 0;
-  border-radius: 2px;
-  background: linear-gradient(90deg, #00d2ff, #3a47d5);
-  animation: gradientSlide 3s linear infinite;
-  background-size: 200% 100%;
-}
-
-@keyframes gradientSlide {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-
- 
-  .about-box {
-    background: gray;
-      border-radius: 64px;
-      text-align: center;
-      justify-content: center;
-      padding: 60px 50px !important;
-      margin-top: 100px;
-      margin-bottom: -60px;
+    color: #000; /* base text color */
   }
   
-  .about h3 {
+  /* All text inside .call-for-posters defaults to black */
+  .call-for-posters,
+  .call-for-posters p,
+  .call-for-posters li,
+  .call-for-posters h1,
+  .call-for-posters h4,
+  .call-for-posters h5,
+  .call-for-posters h6,
+  .call-for-posters b,
+  .call-for-posters strong,
+  .call-for-posters span {
+    color: #000 !important;
+  }
+  
+  /* Section title (Call for Papers, etc.) */
+  .call-for-posters h2 {
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  /* Animated gradient underline for h2 */
+  .call-for-posters h2::after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 4px;
+    margin: 10px auto 0;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #00d2ff, #3a47d5);
+    animation: gradientSlide 3s linear infinite;
+    background-size: 200% 100%;
+  }
+  
+  /* Gradient animation (shared for both title and box) */
+  @keyframes gradientSlide {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  /* General section box styling for each Row */
+  .call-for-posters .section-box {
+    position: relative; /* for the gradient line */
+    text-align: left;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+    margin: 40px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* ensures gradient stays within rounded corners */
+  }
+  
+  /* Animated gradient top line for section boxes */
+  .call-for-posters .section-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+    background: linear-gradient(90deg, #00d2ff, #3a47d5);
+    background-size: 200% 100%;
+    animation: gradientSlide 3s linear infinite;
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.5); /* subtle glow */
+  }
+  
+  /* Headings inside boxes */
+  .call-for-posters .section-box h3 {
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 8px;
+  }
+  
+  /* Consistent spacing for mobile */
+  @media (max-width: 768px) {
+    .call-for-posters .section-box {
+      padding: 20px;
+      margin: 25px 0;
+    }
+  }
+  
+  /* Background container box */
+  .call-for-posters-box {
+    background: gray;
+    border-radius: 64px;
+    text-align: center;
+    justify-content: center;
+    padding: 60px 50px !important;
+    margin-top: 100px;
+    margin-bottom: -60px;
+  }
+  
+  /* Subheadings */
+  .call-for-posters h3 {
+    color: white;
     margin-top: 20px;
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
-    text-align: center; /* ✅ Centers all inline and inline-block text elements */
+    text-align: center;
   }
-
+  
+  /* Column spacing */
   .column-item {
     padding-bottom: 20px;
   }
-
+  
+  /* Alignment helpers */
   .left-align {
     text-align: left;
   }
   
-  .about p {
-    color: rgb(92, 92, 92);
+  /* Paragraph text */
+  .call-for-posters p {
+    color: #000;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
     margin: 0px 0 40px 0;
   }
   
+  /* Image styling */
   .abt-img {
     width: 300px;
     border-radius: 0.5rem;
   }
   
+  /* Buttons */
   .button-link {
     margin-top: 20px;
   }
-
+  
   .aling-items-center {
     text-align: center;
   }
-
-  .about-section button {
+  
+  .call-for-posters-section button {
     font-weight: 700;
     color: #000;
     background-color: #fff;
@@ -92,16 +162,17 @@
     transition: 0.3s ease-in-out;
     border: 1px solid #fff;
   }
-
-  .about-section button span {
+  
+  .call-for-posters-section button span {
     z-index: 1;
     position: relative;
   }
-
-  .about-section button:hover {
+  
+  .call-for-posters-section button:hover {
     color: #fff;
   }
-  .about-section button::before {
+  
+  .call-for-posters-section button::before {
     content: "";
     background-color: #121212;
     width: 0;
@@ -112,12 +183,14 @@
     z-index: 0;
     transition: 0.3s ease-in-out;
   }
-  .about-section button:hover::before {
+  
+  .call-for-posters-section button:hover::before {
     width: 100%;
   }
   
+  /* Responsive layout adjustments */
   @media screen and (max-width: 1200px) {
-    .about p {
+    .call-for-posters p {
       font-size: 16px;
       margin: 40px 20px;
     }
@@ -131,7 +204,7 @@
       margin-top: 20px;
     }
   
-    .about {
+    .call-for-posters {
       width: 90%;
       margin-left: auto;
       margin-right: auto;
@@ -143,12 +216,12 @@
       margin-top: 0px;
     }
   
-    .about {
+    .call-for-posters {
       margin-bottom: 70px;
       width: 100%;
     }
   
-    .about p {
+    .call-for-posters p {
       margin-left: 0px;
       margin-right: 0px;
     }
