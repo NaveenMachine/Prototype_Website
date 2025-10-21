@@ -140,7 +140,7 @@ function App() {
             element={
               <section className="body">
                 <Container>
-                  <Journal />
+                  <Harvest2025Page />
                 </Container>
               </section>
             }
