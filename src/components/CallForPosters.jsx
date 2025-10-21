@@ -57,8 +57,8 @@ const CallForPosters = () => {
         <Col xs={12} lg={12}>
           <h3>Important Dates</h3>
           <ul>
-            <li><b>Workshop Date:</b> March 6th, 2026</li>
-            <li><b>General Application Deadline: </b>December 07 2025 11:59PM UTC-0</li>
+            <li><b>Workshop Date:</b> To be decided</li>
+            <li><b>Poster Submission Deadline: </b>December 07 2025 11:59PM UTC-0</li>
             <li><b>Camera-ready deadline (Hard Deadline):</b>  January 9th, 2026 11:59 PM PST</li>
           </ul>
           <b>Kindly note that if you miss the January 9th deadline, your work will not appear in the official proceedings. This is a hard deadline</b>
