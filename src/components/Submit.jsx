@@ -85,17 +85,17 @@ const Contact = () => {
                         <form ref={form} onSubmit={sendEmail}>
                             <Row>
                                 <Col size={12} sm={12} className="column">
-                                    <b>Workshop Date:</b> 6 March 2026
+                                    <b>Workshop Date:</b> March 6th, 2026
                                 </Col> 
                             </Row>
                             <Row>
                                 <Col size={12} sm={12} className="column">
-                                    <b>General Application Deadline: </b>Dec 07 2025 11:59PM UTC-0
+                                    <b>General Application Deadline: </b>December 07 2025 11:59PM UTC-0
                                 </Col> 
                             </Row>
                             <Row>
                                 <Col size={12} sm={12} className="column">
-                                    <b>Camera-ready deadline:</b>  Jan 09, 2026 11:59 PM PST 
+                                    <b>Camera-ready deadline (Hard Deadline):</b>  January 9th, 2026 11:59 PM PST 
                                 </Col>
                             </Row>
                             {/* <Row>
