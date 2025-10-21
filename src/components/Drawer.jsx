@@ -1,23 +1,34 @@
 import { useState } from 'react';
-import { Drawer, IconButton, Typography, Box, List, ListItemButton, ListItemText, Button } from '@mui/material';
+import {
+  Drawer,
+  IconButton,
+  Typography,
+  Box,
+  List,
+  ListItemButton,
+  ListItemText,
+  Button,
+} from '@mui/material';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import PropTypes from 'prop-types';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-// 1. Import Link from react-scroll
-import { Link } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom'; // ✅ Works with HashRouter
 
 export default function DrawerComp({ links }) {
   const [open, setOpen] = useState(false);
 
+  // Optional: add small delay to close Drawer after navigation for smoother UX
+  const handleCloseAfterNav = () => {
+    setTimeout(() => setOpen(false), 200);
+  };
+
   return (
     <>
-      {/* Drawer Component */}
+      {/* Drawer Panel */}
       <Drawer
         PaperProps={{
           sx: {
             backgroundColor: 'rgba(9,9,121,1)',
+            zIndex: 1301, // ensure above AppBar
           },
         }}
         anchor="top"
@@ -33,49 +44,43 @@ export default function DrawerComp({ links }) {
             padding: 2,
           }}
         >
-          <Typography variant="h6" component="div" sx={{ color: 'white', marginBottom: 2 }}>
+          <Typography variant="h6" sx={{ color: 'white', mb: 2 }}>
             Harvest 2026
           </Typography>
+
           <List>
-            {/* 2. Modify the mapped links */}
+            {/* Internal Route Links */}
             {links.map((link, index) => (
               <ListItemButton
                 key={index}
-                component={Link}
-                to={link.toLowerCase()}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                onClick={() => setOpen(false)} // This correctly closes the drawer on click
+                component={RouterLink}
+                to={link.path}
+                onClick={handleCloseAfterNav}
               >
-                <ListItemText sx={{ color: 'white', textAlign: 'center' }} primary={link} />
+                <ListItemText
+                  sx={{ color: 'white', textAlign: 'center' }}
+                  primary={link.label}
+                />
               </ListItemButton>
             ))}
-            
-           
 
-            {/* 4. Modify the Contact button */}
-            <Box
-              sx={{
-                display: 'flex',
-                justifyContent: 'center',
-                marginTop: 2,
-              }}
-            >
+            {/* External Submit button */}
+            <Box sx={{ display: 'flex', justifyContent: 'center', mt: 2 }}>
               <Button
-                component={Link}
-                to="contact"
-                smooth={true}
-                offset={-70}
-                duration={500}
-                onClick={() => setOpen(false)} // Also close drawer on click
+                onClick={() => {
+                  window.open(
+                    'https://www.computer.org/csdl/proceedings/1000040',
+                    '_blank'
+                  );
+                  setOpen(false);
+                }}
                 sx={{
                   background: 'white',
+                  color: 'black',
                   '&:hover': {
                     background: 'rgba(2,0,36,0.8)',
                     color: 'white',
                   },
-                  color: 'black',
                 }}
                 variant="contained"
               >
@@ -86,15 +91,14 @@ export default function DrawerComp({ links }) {
         </Box>
       </Drawer>
 
-      {/* IconButton to Open Drawer */}
+      {/* Menu Icon Button */}
       <IconButton
         onClick={() => setOpen(!open)}
         sx={{
           marginLeft: 'auto',
+          color: 'white',
           backgroundColor: 'rgba(0, 0, 0, 0.1)',
-          '&:hover': {
-            backgroundColor: 'rgba(0, 0, 0, 0.2)',
-          },
+          '&:hover': { backgroundColor: 'rgba(0, 0, 0, 0.2)' },
         }}
       >
         <MenuRoundedIcon />
@@ -103,7 +107,11 @@ export default function DrawerComp({ links }) {
   );
 }
 
-// Define prop types for the NavBar component
 DrawerComp.propTypes = {
-  links: PropTypes.arrayOf(PropTypes.string).isRequired,
+  links: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      path: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };

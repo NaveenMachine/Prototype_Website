@@ -14,11 +14,11 @@ import {
 import { Link as RouterLink } from 'react-router-dom';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import DrawerComp from './Drawer.jsx'; // ✅ Make sure the path is correct
+import DrawerComp from './Drawer.jsx'; // ✅ Make sure path is correct
 
 export default function NavBar({ links }) {
   const theme = useTheme();
-  const isMatch = useMediaQuery(theme.breakpoints.down('md'));
+  const isMatch = useMediaQuery('(max-width:1350px)');
   const [value, setValue] = useState();
 
   // --- Dropdown state for "Past Events" ---
@@ -41,6 +41,7 @@ export default function NavBar({ links }) {
       }}
     >
       <Toolbar>
+        {/* Logo / Title */}
         <Button
           sx={{ background: 'transparent', color: 'white', width: '250px' }}
           component={RouterLink}
@@ -51,7 +52,7 @@ export default function NavBar({ links }) {
 
         {isMatch ? (
           // ✅ Drawer on small screens
-          <DrawerComp links={links.map((l) => l.label)} />
+          <DrawerComp links={links} />
         ) : (
           // ✅ Tabs on larger screens
           <Box sx={{ width: '100%', display: 'flex', justifyContent: 'space-between' }}>
@@ -62,7 +63,7 @@ export default function NavBar({ links }) {
               textColor="inherit"
             >
               {links.map((link, index) => {
-                // Handle "Past Events" as a dropdown
+                // Handle "Past Events" as dropdown
                 if (link.label === 'Past Events') {
                   return (
                     <Tab
@@ -95,11 +96,16 @@ export default function NavBar({ links }) {
                 sx: { backgroundColor: 'rgba(255,255,255,0.95)', mt: 1 },
               }}
             >
-              <MenuItem component={RouterLink} to="/past-events/2025" onClick={handleMenuClose}>
+              <MenuItem
+                component={RouterLink}
+                to="/past-events/2025"
+                onClick={handleMenuClose}
+              >
                 Harvest 2025
               </MenuItem>
             </Menu>
 
+            {/* Submit button (desktop) */}
             <Button
               sx={{ marginLeft: 5, background: 'rgba(2,0,36,1)' }}
               variant="contained"
