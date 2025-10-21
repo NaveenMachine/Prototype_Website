@@ -19,7 +19,7 @@ const Banner = () => {
                         <h2>
                             {`HARVEST-Vision: Second International Workshop on Applications of CV and HPC in Agriculture`}
                         </h2>
-                        <h3>March 6th, 2026 | JW Marriott Starpass in Tucson, Arizona</h3>
+                        <h3>Workshop Date: To be decided | JW Marriott Starpass in Tucson, Arizona</h3>
                     </Col>
                 </Row>
             </Container>

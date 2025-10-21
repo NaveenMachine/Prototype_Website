@@ -83,7 +83,7 @@ const CallForPosters = () => {
       <Row className="section-box">
         <Col xs={12} lg={12}>
           <h3>Submission Information</h3>
-          We accept full-length papers (5-8 pages, WACV template, intended for publication in WACV’s workshop proceedings). Accepted contributions will be presented as orals or posters. All submissions should use the
+          We require a short 1 to 2 page extended abstract about the poster and a 3'x4' poster that is oriented vertically. Accepted contributions will be presented as orals or posters. All submissions should use the
 official WACV template and be submitted via OpenReview on the workshop website. Submissions will be
 peer-reviewed by our program committee for technical quality and relevance.
         </Col>
@@ -94,10 +94,10 @@ peer-reviewed by our program committee for technical quality and relevance.
           The workshop proceedings will be published through IEEE and included in the IEEE Xplore digital library.
         </Col>
         <Col xs={12} lg={12} className='column-item'>
-        Each research paper will be taken through a comprehensive peer review process by an internationally recognized group of experts in the field. Papers will be evaluated along the metrics of a) Quality of Presentation; b) Novelty / Originality; c) Relation to State of the Art; d) Technical Strength; e) Significance of Work; f) Relevance to Workshop; and g) Availability and quality of the "Artifact Description Appendix". Every effort will be made to ensure that each paper receives multiple reviews.
+        Each research poster will be taken through a comprehensive peer review process by an internationally recognized group of experts in the field. Posters will be evaluated along the metrics of a) Quality of Presentation; b) Novelty / Originality; c) Relation to State of the Art; d) Technical Strength; e) Significance of Work; f) Relevance to Workshop; and g) Availability and quality of the "Artifact Description Appendix". Every effort will be made to ensure that each paper receives multiple reviews.
         </Col>
         <Col xs={12} lg={12} className='column-item'>
-        At least one of the authors of each accepted paper must register as a participant of the workshop and present the paper at the workshop, in order to have the paper published in the proceedings.
+        At least one of the authors of each accepted poster must register as a participant of the workshop and present the poster at the workshop, in order to have the poster published in the proceedings.
         </Col>
         <Col xs={12} lg={12} className='column-item'>
         Please contact the Program Chairs for any questions/clarifications.
